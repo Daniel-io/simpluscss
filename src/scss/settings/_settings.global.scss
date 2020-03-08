@@ -1,0 +1,65 @@
+/* ==========================================================================
+   #GLOBAL
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+*  The global settings file contains any project-wide variables; things that
+*  need to be made available to the entire codebase.
+*/
+
+
+
+
+
+
+
+
+
+
+/* Base typographical styles.
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+$global-font-baseline:  62.5% !default;    /* (10 / 16 = .625) */
+$global-font-size:      1.6rem !default;
+$global-font-height:    1.5 !default;
+
+
+
+
+
+
+
+
+
+/* Standarise some UI treatments
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;

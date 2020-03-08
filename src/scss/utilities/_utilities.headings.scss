@@ -1,0 +1,46 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Redefine all of our basic heading styles against utility classes so as to
+* allow for double stranded heading hierarchy, e.g. we semantically need an H2,
+* but we want it to be sized like an H1:
+*
+* <h2 class="u-h1"></h2>
+*
+*/  
+
+
+.u-h1 {
+  font-size: 3.6rem !important;
+}
+
+.u-h2 {
+  font-size: 2.8rem !important;
+}
+
+.u-h3 {
+  font-size: 2.4rem !important;
+}
+
+.u-h4 {
+  font-size: 2rem !important;
+}
+
+.u-h5 {
+  font-size: 1.8rem !important;
+}
+
+.u-h6 {
+  font-size: 1.6rem !important;
+}

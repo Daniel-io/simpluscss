@@ -1,0 +1,188 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+*
+* 1. Allow the use of style box model properties.
+* 2. Line up different sized buttons.
+* 3. Make buttons inherit font styles (often necessary when styling `input`s as
+*    buttons).
+* 4. Reset/normalize styles.
+
+* 5. Force all button-styled elements to appear clickable.
+*
+*/
+
+
+.c-btn {
+
+  /* Box model */
+  display: inline-block;      /* 1 */
+  vertical-align: middle;     /* 2 */
+  margin: 0;                  /* 4 */
+  padding: $global-spacing-unit-small $global-spacing-unit;
+
+  /* Typography */
+  font: inherit;              /* 3 */
+  text-align: center;         /* 4 */
+  text-decoration: none;      /* 4 */
+
+  /* Visual */
+  cursor: pointer;            /* 5 */
+  border-radius: $global-radius;
+
+  /* Misc */
+  transition: $global-transition;
+}
+
+
+
+
+
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.c-btn--primary,
+.c-btn--primary:link,
+.c-btn--primary:visited {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.c-btn--primary:hover,
+.c-btn--primary:active,
+.c-btn--primary:focus {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
+
+
+.c-btn--secondary,
+.c-btn--secondary:link,
+.c-btn--secondary:visited {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.c-btn--secondary:hover,
+.c-btn--secondary:active,
+.c-btn--secondary:focus {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
+
+
+.c-btn--tertiary,
+.c-btn--tertiary:link,
+.c-btn--tertiary:visited {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.c-btn--tertiary:hover,
+.c-btn--tertiary:active,
+.c-btn--tertiary:focus {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.c-btn--small {
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+}
+
+.c-btn--large {
+  padding: $global-spacing-unit $global-spacing-unit-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Ghost buttons have see-through backgrounds and are bordered.
+*/
+
+
+.c-btn--ghost, 
+.c-btn--ghost:link, 
+.c-btn--ghost:visited {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.c-btn--ghost:hover,
+.c-btn--ghost:active,
+.c-btn--ghost:focus {
+  background-color: #fff;
+  color: #fff;
+}

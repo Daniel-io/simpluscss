@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Page-level constraining and wrapping elements.
+*/
+
+
+.o-wrapper {
+  max-width: 128rem;
+  padding-right: $global-spacing-unit;    
+  padding-left: $global-spacing-unit;     
+  margin-right: auto;
+  margin-left: auto;
+}
+
+    .o-wrapper:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    

@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Simple page-level setup.
+*
+* 1. Ensure the page always fills at least the entire height of the viewport.
+* 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+*    navigating between pages that do/do not have enough content to produce
+*    scrollbars naturally.
+* 3. Set the default `font-size` and `line-height` and family for the entire project.
+*/
+
+
+html {
+  /* Box model */
+  min-height: 100vh;                          /* 1 */
+  overflow-y: scroll;                         /* 2 */
+
+  /* Typography */
+  font-family: 'Lato', sans-serif;            /* 3 */
+  font-size:  $global-font-baseline;          /* 3 */
+  line-height: $global-font-height;           /* 3 */
+
+  /* Visual */
+  background-color: $color-white;
+  color: $color-grey;
+}
+
+
+    body {
+      font-size: $global-font-size;
+    }

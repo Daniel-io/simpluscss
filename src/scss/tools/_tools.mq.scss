@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #MQ
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Pre-configuration for Sass MQ.
+* $breakpoint argument options 
+*
+* tiny..........30em - 480px
+* small.........45em - 720px
+* medium........64em - 1024px
+* large.........75em - 1200px
+*
+*/
+
+
+@mixin mq($breakpoint) {
+
+  @if $breakpoint == tiny {
+    @media only screen and (min-width: 30em) { @content };
+  }
+
+  @if $breakpoint == small {
+    @media only screen and (min-width: 45em) { @content };
+  }
+
+  @if $breakpoint == medium {
+    @media only screen and (min-width: 64em) { @content };
+  }
+
+  @if $breakpoint == large {
+    @media only screen and (min-width: 75em) { @content };
+  }
+
+}
+

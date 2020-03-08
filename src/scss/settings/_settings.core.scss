@@ -1,0 +1,78 @@
+/* ==========================================================================
+   #CORE
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* This core file sets up the most important setup variables. They
+* underpin a lot of how the framework functions and should be modified and
+* preconfigured with caution.
+*/
+
+
+
+
+
+
+
+
+
+
+/* Global spacing units
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/*  
+* It is not recommended that you modify these following variables.
+* (it can break your vertical rhythm), but if you need to, you can.
+*/
+
+
+$global-spacing-unit-tiny:   .6rem;
+$global-spacing-unit-small:  1.2rem;
+$global-spacing-unit:        2.4rem;
+$global-spacing-unit-large:  4.8rem;
+$global-spacing-unit-huge:   9.6rem;
+
+
+
+
+
+
+
+
+
+
+/* Layout spacing unit */
+
+$layout-spacing-unit-tiny:   1%;
+$layout-spacing-unit-small:  1.5%;
+$layout-spacing-unit:        2%;
+$layout-spacing-unit-large:  3%;
+$layout-spacing-unit-huge:   4%;
+
+
+
+
+
+
+
+
+
+

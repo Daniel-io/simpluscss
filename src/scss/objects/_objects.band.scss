@@ -1,0 +1,59 @@
+/* ==========================================================================
+   #BAND
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.c-band {
+  padding-top: $global-spacing-unit;
+  padding-bottom: $global-spacing-unit;
+}
+
+
+
+
+
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.c-band--tiny {
+  padding-top: $global-spacing-unit-tiny;
+  padding-bottom: $global-spacing-unit-tiny;
+}
+  
+.c-band--small {
+  padding-top: $global-spacing-unit-small;
+  padding-bottom: $global-spacing-unit-small;
+}
+  
+.c-band--large {
+  padding-top: $global-spacing-unit-large;
+  padding-bottom: $global-spacing-unit-large;
+}
+
+.c-band--huge {
+  padding-top: $global-spacing-unit-huge;
+  padding-bottom: $global-spacing-unit-huge;
+}
+  

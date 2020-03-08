@@ -1,0 +1,97 @@
+/* ==========================================================================
+   #MEDIA
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Place any image- and text-like content side-by-side, as per:
+* http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+*
+* 1. Overide when using the media object for the purpose of shape-outside property.
+*
+*/
+
+
+
+
+
+
+
+
+
+
+/* Wrapping element for .o-media__img and .o-media__body */
+.o-media {
+  display: block;
+}
+
+    .o-media__img {
+      float: unset;
+    }
+
+        .o-media__img img {
+          display: block;
+        }
+
+
+
+    .o-media__body {
+      overflow: hidden;  /* 1 */
+      display: block;
+    }
+
+    .o-media__body,
+    .o-media__body > *:last-child {
+      margin-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 45em) {
+
+
+
+
+
+
+
+
+
+  .o-media__img {
+    float: left;
+    margin-right: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
