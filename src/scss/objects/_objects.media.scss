@@ -28,65 +28,78 @@
 
 
 
-/* Wrapping element for .o-media__img and .o-media__body */
+/*
+* o-meida is the wrapping element for .o-media__img and .o-media__body 
+*/ 
+
+
 .o-media {
   display: block;
+  @include clearfix;
 }
 
-    .o-media__img {
-      float: unset;
-    }
-
-        .o-media__img img {
-          display: block;
-        }
+.o-media__img {
+  float: unset;
 
 
-
-    .o-media__body {
-      overflow: hidden;  /* 1 */
-      display: block;
-    }
-
-    .o-media__body,
-    .o-media__body > *:last-child {
-      margin-bottom: 0;
-    }
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 45em) {
-
-
-
-
-
-
-
-
-
-  .o-media__img {
+  @include mq(small) {
     float: left;
     margin-right: 2rem;
   }
-
-
-
-
-
-
-
-
-
-
 }
+
+.o-media__img img {
+  display: block;
+}
+
+.o-media__body {
+  overflow: hidden;  /* 1 */
+  display: block;
+}
+
+.o-media__body,
+.o-media__body > *:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Allow for shape-outside property  
+*/   
+
+
+.o-media--shape .o-media__body {
+  overflow: unset;
+}
+  
+
+
+
+
+
+
+
+
 
 
 

@@ -12,6 +12,27 @@
 
 
 /**
+ * Simple default styles for headings 1 through 6.
+ */
+
+
+$font-size-h1:  3.6rem !default;
+$font-size-h2:  2.8rem !default;
+$font-size-h3:  2.4rem !default;
+$font-size-h4:  2rem   !default;
+$font-size-h5:  1.8rem !default;
+$font-size-h6:  1.6rem !default;
+
+
+
+
+
+
+
+
+
+
+/**
 * Simple default styles for headings 1 through 6. Anything more opinionated
 * than simple font-size changes should likely be applied via classes (see:
 * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
@@ -19,25 +40,25 @@
 
 
 h1 {
-  font-size: 3.6rem;
+  font-size: $font-size-h1;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: $font-size-h2;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: $font-size-h3;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: $font-size-h4;
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: $font-size-h5;
 }
 
 h6 {
-  font-size: 1.6rem;
+  font-size: $font-size-h6;
 }

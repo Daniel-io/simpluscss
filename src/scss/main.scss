@@ -59,6 +59,7 @@
 * Buttons..............Button styles.
 *
 * UTILITIES
+* Alignment............Text alignment.
 * Clearfix.............Clearfix floats.
 * Hacks................Short-term hacks and quick-fixes.
 * Headings.............Reassigning our heading styles to helper classes.
@@ -125,11 +126,11 @@
 
 
 
+@import "utilities/utilities.alignment";
 @import "utilities/utilities.clearfix";
 @import "utilities/utilities.hacks";
 @import "utilities/utilities.headings";
 @import "utilities/utilities.healthcheck";
 @import "utilities/utilities.hide";
 @import "utilities/utilities.margin";
-@import "utilities/utilities.show";
 @import "utilities/utilities.widths";

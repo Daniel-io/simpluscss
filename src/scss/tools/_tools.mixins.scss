@@ -17,3 +17,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+
+
+
+
+
+
+
+@mixin hover($canhover) {
+
+  @if ($canhover == false) {
+    @media only screen and (hover: none) { @content };
+
+  } @else if ($canhover == true) {
+    @media only screen and (hover: hover) { @content };
+
+  }
+}

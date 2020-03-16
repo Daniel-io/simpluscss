@@ -31,6 +31,7 @@ $color-white:                       #fff !default;
 $color-grey:                        #666 !default;
 $color-grey-dark:                   #333 !default;
 $color-grey-light:                  #999 !default;
+$color-grey-light-1:                #f2f2f2 !default;
 
 
 
@@ -43,3 +44,13 @@ $color-grey-light:                  #999 !default;
 
 /* Reassign literal variables to meaningful ones.
    ========================================================================== */
+
+
+
+
+
+
+
+
+
+$color-tint:    $color-grey-light-1;

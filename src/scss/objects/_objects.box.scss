@@ -16,19 +16,19 @@
  * Components layer.
  *
  * 1. So we can apply the `.o-box` class to naturally-inline elements.
- * 2. Use global spacing units
  *
  */
 
  
 .o-box {
-  display: block;   /* [1] */
+  display: block;   /* 1 */
   padding: $global-spacing-unit;
+  @include clearfix;
 }
 
-    .o-box > *:last-child {
-      margin-bottom: 0;
-    }
+.o-box > *:last-child {
+  margin-bottom: 0;
+}
 
 
 

@@ -24,9 +24,45 @@
   margin-left: auto;
 }
 
-    .o-wrapper:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
+.o-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.o-wrapper--tiny {
+  max-width: 60rem;
+}
+
+.o-wrapper--small {
+  max-width: 80rem;
+}
+
+.o-wrapper--large {
+  max-width: 148rem;
+}
+
+.o-wrapper--huge {
+  max-width: 200rem;
+}

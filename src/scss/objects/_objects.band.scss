@@ -11,7 +11,7 @@
 
 
 
-.c-band {
+.o-band {
   padding-top: $global-spacing-unit;
   padding-bottom: $global-spacing-unit;
 }
@@ -37,23 +37,47 @@
 
 
 
-.c-band--tiny {
+.o-band--tiny {
   padding-top: $global-spacing-unit-tiny;
   padding-bottom: $global-spacing-unit-tiny;
 }
   
-.c-band--small {
+.o-band--small {
   padding-top: $global-spacing-unit-small;
   padding-bottom: $global-spacing-unit-small;
 }
   
-.c-band--large {
+.o-band--large {
   padding-top: $global-spacing-unit-large;
   padding-bottom: $global-spacing-unit-large;
 }
 
-.c-band--huge {
+.o-band--huge {
   padding-top: $global-spacing-unit-huge;
   padding-bottom: $global-spacing-unit-huge;
 }
-  
+
+
+
+
+
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.o-band--tint {
+  background-color: $color-tint;
+}
