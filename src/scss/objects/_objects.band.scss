@@ -78,6 +78,16 @@
 
 
 
+.o-band--primary {
+  color: $color-white;
+  background-color: $color-brand-primary;
+}
+
+.o-band--secondary {
+  color: $color-white;
+  background-color: $color-brand-secondary;
+}
+
 .o-band--tint {
   background-color: $color-tint;
 }
