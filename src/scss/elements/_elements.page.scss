@@ -35,9 +35,22 @@ html {
   /* Visual */
   background-color: $color-white;
   color: $color-grey;
-}
 
+
+  @include mq(small) {
+    font-size:  $global-font-baseline-small;         
+  }
+
+  @include mq(medium) {
+    font-size:  $global-font-baseline-medium;         
+  }
+}
 
 body {
   font-size: $global-font-size;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-brand-primary;
 }

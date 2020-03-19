@@ -12,7 +12,7 @@
 
 
 .u-mb {
-  margin-bottom: $global-spacing-unit;
+  margin-bottom: $global-spacing-unit !important;
 }
 
 
@@ -37,23 +37,23 @@
 
 
 .u-mb--flush {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .u-mb--tiny {
-  margin-bottom: $global-spacing-unit-tiny;
+  margin-bottom: $global-spacing-unit-tiny !important;
 }
 
 .u-mb--small {
-  margin-bottom: $global-spacing-unit-small;
+  margin-bottom: $global-spacing-unit-small !important;
 }
 
 .u-mb--large {
-  margin-bottom: $global-spacing-unit-large;
+  margin-bottom: $global-spacing-unit-large !important;
 }
 
 .u-mb--huge {
-  margin-bottom: $global-spacing-unit-huge;
+  margin-bottom: $global-spacing-unit-huge !important;
 }
 
 

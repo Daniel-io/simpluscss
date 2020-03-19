@@ -96,7 +96,7 @@ function js() {
 
 watch('src/scss/**/*.scss', css ).on('change', browserSync.reload);
 watch('docs/*.html').on('change', browserSync.reload)
-watch('src/js/*.js', js ).on('change', browserSync.reload);
+watch('src/js/**/*.js', js ).on('change', browserSync.reload);
 
 
 
