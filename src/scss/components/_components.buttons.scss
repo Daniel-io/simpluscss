@@ -71,15 +71,17 @@
 .c-btn--primary,
 .c-btn--primary:link,
 .c-btn--primary:visited {
-  background-color: #fff;
-  border: 1px solid #fff;
+  color: $color-white;
+  background-color: $color-brand-primary;
+  border: 1px solid $color-brand-primary;
+  border-radius: $global-radius;
 }
 
 .c-btn--primary:hover,
 .c-btn--primary:active,
 .c-btn--primary:focus {
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: $color-brand-primary-shadow;
+  border: 1px solid $color-brand-primary-shadow;
 }
 
 
@@ -89,33 +91,153 @@
 .c-btn--secondary,
 .c-btn--secondary:link,
 .c-btn--secondary:visited {
-  background-color: #fff;
-  border: 1px solid #fff;
+  color: $color-white;
+  background-color: $color-brand-secondary;
+  border: 1px solid $color-brand-secondary;
+  border-radius: $global-radius;
 }
 
 .c-btn--secondary:hover,
 .c-btn--secondary:active,
 .c-btn--secondary:focus {
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: $color-brand-secondary-shadow;
+  border: 1px solid $color-brand-secondary-shadow;
 }
 
 
 
 
 
-.c-btn--tertiary,
-.c-btn--tertiary:link,
-.c-btn--tertiary:visited {
-  background-color: #fff;
-  border: 1px solid #fff;
+.c-btn--success,
+.c-btn--success:link,
+.c-btn--success:visited {
+  color: $color-white;
+  background-color: $color-success;
+  border: 1px solid $color-success;
+  border-radius: $global-radius;
 }
 
-.c-btn--tertiary:hover,
-.c-btn--tertiary:active,
-.c-btn--tertiary:focus {
-  background-color: #fff;
-  border: 1px solid #fff;
+.c-btn--success:hover,
+.c-btn--success:active,
+.c-btn--success:focus {
+  background-color: $color-success-shadow;
+  border: 1px solid $color-success-shadow;
+}
+
+
+
+
+
+
+.c-btn--danger,
+.c-btn--danger:link,
+.c-btn--danger:visited {
+  color: $color-white;
+  background-color: $color-danger;
+  border: 1px solid $color-danger;
+  border-radius: $global-radius;
+}
+
+.c-btn--danger:hover,
+.c-btn--danger:active,
+.c-btn--danger:focus {
+  background-color: $color-danger-shadow;
+  border: 1px solid $color-danger-shadow;
+}
+
+
+
+
+
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Ghost buttons have see-through backgrounds and are bordered.
+*/
+
+
+.c-btn--ghost-primary, 
+.c-btn--ghost-primary:link, 
+.c-btn--ghost-primary:visited {
+  color: $color-brand-primary;
+  border: 1px solid $color-brand-primary;
+}
+
+.c-btn--ghost-primary:hover,
+.c-btn--ghost-primary:active,
+.c-btn--ghost-primary:focus {
+  background-color: $color-brand-primary;;
+  color: #fff;
+}
+
+
+
+
+
+
+.c-btn--ghost-secondary, 
+.c-btn--ghost-secondary:link, 
+.c-btn--ghost-secondary:visited {
+  color: $color-brand-secondary;
+  border: 1px solid $color-brand-secondary;
+}
+
+.c-btn--ghost-secondary:hover,
+.c-btn--ghost-secondary:active,
+.c-btn--ghost-secondary:focus {
+  background-color: $color-brand-secondary;
+  color: #fff;
+}
+
+
+
+
+
+.c-btn--ghost-success, 
+.c-btn--ghost-success:link, 
+.c-btn--ghost-success:visited {
+  color: $color-success;
+  border: 1px solid $color-success;
+}
+
+.c-btn--ghost-success:hover,
+.c-btn--ghost-success:active,
+.c-btn--ghost-success:focus {
+  background-color: $color-success;
+  color: #fff;
+}
+
+
+
+
+
+.c-btn--ghost-danger, 
+.c-btn--ghost-danger:link, 
+.c-btn--ghost-danger:visited {
+  color: $color-danger;
+  border: 1px solid $color-danger;
+}
+
+.c-btn--ghost-danger:hover,
+.c-btn--ghost-danger:active,
+.c-btn--ghost-danger:focus {
+  background-color: $color-danger;
+  color: #fff;
 }
 
 
@@ -144,7 +266,7 @@
 }
 
 .c-btn--large {
-  padding: $global-spacing-unit $global-spacing-unit-large;
+  padding: $global-spacing-unit-small $global-spacing-unit-large;
 }
 
 
@@ -156,8 +278,7 @@
 
 
 
-
-/* Ghost buttons
+/* UI variants
    ========================================================================== */
 
 
@@ -169,21 +290,18 @@
 
 
 
-/**
-* Ghost buttons have see-through backgrounds and are bordered.
-*/
-
-
-.c-btn--ghost, 
-.c-btn--ghost:link, 
-.c-btn--ghost:visited {
-  border: 1px solid #fff;
-  color: #fff;
+.c-btn--block {
+  display: block;
+  width: 100%;
 }
 
-.c-btn--ghost:hover,
-.c-btn--ghost:active,
-.c-btn--ghost:focus {
-  background-color: #fff;
-  color: #fff;
-}
+
+
+
+
+
+
+
+
+
+  
