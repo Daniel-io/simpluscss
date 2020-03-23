@@ -1,0 +1,225 @@
+/* ==========================================================================
+   #MODAL
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* 1. Set stack order for modal, backdrop and modal dialog.
+* 2. Set margin. (will be base for proper max height).
+*/
+
+$index-top:    3000;            /* 1 */
+$index-middle: 2000;            /* 1 */
+$index-bottom: 1000;            /* 1 */
+
+$modal-dialog-margin: 1.75rem;  /* 2 */
+
+
+
+
+
+
+
+
+
+/**
+* Prevent body from scrolling when modal is open
+*/
+
+
+.modal-open {
+  overflow-y: hidden;
+
+  .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/**
+* o-modal:          Overall container, were the modal scrolls within.
+* o-modal__dialog:  Shell div to position the modal with bottom padding.
+* o-modal__content: Actual modal.
+*/
+
+
+
+
+
+/**
+* o-modal is direct parent of .o-modal__dialog
+*
+* 1. Prevent Chrome on Windows from adding a focus outline. For details, see
+* 2. Hidden by default
+*/
+
+
+.o-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;                /* 1 */
+  z-index: $index-bottom;
+  transition: opacity .4s;
+  
+  opacity: 0;                /* 2 */
+  visibility: hidden; 
+
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.o-modal__dialog {
+  position: relative;
+  width: auto;
+  margin: $modal-dialog-margin auto;
+  z-index: $index-top;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+
+
+  @include mq(small) {
+    max-width: 100rem;
+  }
+}
+
+
+.o-modal__content {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $color-white;
+}
+
+
+/**
+* o-modal__body: Where all content resides
+* - sibiling of o-modal__header & o-modal__footer
+*/
+
+.o-modal__body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: $global-spacing-unit;
+}
+
+
+
+
+
+
+
+
+
+
+/* Modal backdrop
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/**
+* Backdrop must be a child of o-modal for proper z-index order
+*/
+
+
+.o-modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+  z-index: $index-middle;
+}
+
+
+
+
+
+
+
+
+
+
+/* Functionality variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.o-modal__dialog--scrollable {
+  max-height: calc(100% - #{$modal-dialog-margin} * 2);
+
+  .o-modal__content {
+    max-height: calc(100vh - #{$modal-dialog-margin} * 2);
+    overflow: hidden;
+  }
+  .o-modal__body {  
+    overflow-y: auto;
+  }
+}
+
+
+/**
+* 1. Center modal__content
+*/
+
+.o-modal__dialog--centered {
+  display: flex;                                                 /* 1 */
+  align-items: center;                                           /* 1 */
+  max-height: calc(100vh - #{$modal-dialog-margin} * 2);
+
+  &::before {
+    display: block; // IE10
+    height:  calc(100vh - #{$modal-dialog-margin} * 2);
+    content: "";
+  }
+}
+
+
+
+
+
+
+
+
