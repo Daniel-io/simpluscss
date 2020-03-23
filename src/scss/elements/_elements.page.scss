@@ -34,7 +34,7 @@ html {
 
   /* Visual */
   background-color: $color-white;
-  color: $color-grey;
+  color: $color-grey-dark-3;
 
 
 
@@ -54,5 +54,5 @@ body {
 
 ::selection {
   color: $color-white;
-  background-color: $color-brand-primary;
+  background-color: $color-primary;
 }

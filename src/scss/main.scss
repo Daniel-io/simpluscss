@@ -48,7 +48,6 @@
 * OBJECTS
 * Band.................Padding top/bottom spacer
 * Box..................boxes off content using padding.
-* Headline.............Simple object for structuring heading pairs.
 * Layout...............Generic layout module.
 * List-bare............Lists with no bullets or indents.
 * List-inline..........Simple abstraction for setting lists out in a line.
@@ -59,14 +58,14 @@
 * Buttons..............Button styles.
 *
 * UTILITIES
-* Text.................Text utilities.
 * Clearfix.............Clearfix floats.
 * Hacks................Short-term hacks and quick-fixes.
 * Headings.............Reassigning our heading styles to helper classes.
 * Healthcheck..........Visual health-check tool.
 * Hide.................Hide elements visually & structurally.
 * Margin...............Margin bottom.
-* Show.................Show/render elements with display property.
+* Shadows..............Global box shadow ui.
+* Text.................Text utilities.
 * Widths...............Simple width helper classes.
 *
 */
@@ -126,11 +125,12 @@
 
 
 
-@import "utilities/utilities.text";
 @import "utilities/utilities.clearfix";
 @import "utilities/utilities.hacks";
 @import "utilities/utilities.headings";
 @import "utilities/utilities.healthcheck";
 @import "utilities/utilities.hide";
 @import "utilities/utilities.margin";
+@import "utilities/utilities.shadows";
+@import "utilities/utilities.text";
 @import "utilities/utilities.widths";

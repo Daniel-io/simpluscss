@@ -72,16 +72,16 @@
 .c-btn--primary:link,
 .c-btn--primary:visited {
   color: $color-white;
-  background-color: $color-brand-primary;
-  border: 1px solid $color-brand-primary;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
   border-radius: $global-radius;
 }
 
 .c-btn--primary:hover,
 .c-btn--primary:active,
 .c-btn--primary:focus {
-  background-color: $color-brand-primary-shadow;
-  border: 1px solid $color-brand-primary-shadow;
+  background-color: $color-primary-shadow;
+  border: 1px solid $color-primary-shadow;
 }
 
 
@@ -92,16 +92,16 @@
 .c-btn--secondary:link,
 .c-btn--secondary:visited {
   color: $color-white;
-  background-color: $color-brand-secondary;
-  border: 1px solid $color-brand-secondary;
+  background-color: $color-secondary;
+  border: 1px solid $color-secondary;
   border-radius: $global-radius;
 }
 
 .c-btn--secondary:hover,
 .c-btn--secondary:active,
 .c-btn--secondary:focus {
-  background-color: $color-brand-secondary-shadow;
-  border: 1px solid $color-brand-secondary-shadow;
+  background-color: $color-secondary-shadow;
+  border: 1px solid $color-secondary-shadow;
 }
 
 
@@ -129,20 +129,20 @@
 
 
 
-.c-btn--danger,
-.c-btn--danger:link,
-.c-btn--danger:visited {
+.c-btn--error,
+.c-btn--error:link,
+.c-btn--error:visited {
   color: $color-white;
-  background-color: $color-danger;
-  border: 1px solid $color-danger;
+  background-color: $color-error;
+  border: 1px solid $color-error;
   border-radius: $global-radius;
 }
 
-.c-btn--danger:hover,
-.c-btn--danger:active,
-.c-btn--danger:focus {
-  background-color: $color-danger-shadow;
-  border: 1px solid $color-danger-shadow;
+.c-btn--error:hover,
+.c-btn--error:active,
+.c-btn--error:focus {
+  background-color: $color-error-shadow;
+  border: 1px solid $color-error-shadow;
 }
 
 
@@ -174,14 +174,14 @@
 .c-btn--ghost-primary, 
 .c-btn--ghost-primary:link, 
 .c-btn--ghost-primary:visited {
-  color: $color-brand-primary;
-  border: 1px solid $color-brand-primary;
+  color: $color-primary;
+  border: 1px solid $color-primary;
 }
 
 .c-btn--ghost-primary:hover,
 .c-btn--ghost-primary:active,
 .c-btn--ghost-primary:focus {
-  background-color: $color-brand-primary;;
+  background-color: $color-primary;;
   color: #fff;
 }
 
@@ -193,14 +193,14 @@
 .c-btn--ghost-secondary, 
 .c-btn--ghost-secondary:link, 
 .c-btn--ghost-secondary:visited {
-  color: $color-brand-secondary;
-  border: 1px solid $color-brand-secondary;
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
 }
 
 .c-btn--ghost-secondary:hover,
 .c-btn--ghost-secondary:active,
 .c-btn--ghost-secondary:focus {
-  background-color: $color-brand-secondary;
+  background-color: $color-secondary;
   color: #fff;
 }
 
@@ -226,17 +226,17 @@
 
 
 
-.c-btn--ghost-danger, 
-.c-btn--ghost-danger:link, 
-.c-btn--ghost-danger:visited {
-  color: $color-danger;
-  border: 1px solid $color-danger;
+.c-btn--ghost-error, 
+.c-btn--ghost-error:link, 
+.c-btn--ghost-error:visited {
+  color: $color-error;
+  border: 1px solid $color-error;
 }
 
-.c-btn--ghost-danger:hover,
-.c-btn--ghost-danger:active,
-.c-btn--ghost-danger:focus {
-  background-color: $color-danger;
+.c-btn--ghost-error:hover,
+.c-btn--ghost-error:active,
+.c-btn--ghost-error:focus {
+  background-color: $color-error;
   color: #fff;
 }
 
