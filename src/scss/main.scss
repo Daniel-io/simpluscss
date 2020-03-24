@@ -52,11 +52,11 @@
 * List-bare............Lists with no bullets or indents.
 * List-inline..........Simple abstraction for setting lists out in a line.
 * Media................Place any image- and text-like content side-by-side.
-* Modal................Modal structure.
 * Wrappers.............Wrappers and page constraints.
 *
 * COMPONENTS
 * Buttons..............Button styles.
+* Modal................Modal structure.
 *
 * UTILITIES
 * Clearfix.............Clearfix floats.
@@ -114,7 +114,6 @@
 @import "objects/objects.list-bare";
 @import "objects/objects.list-inline";
 @import "objects/objects.media";
-@import "objects/objects.modal";
 @import "objects/objects.wrappers";
 
 
@@ -122,6 +121,7 @@
 
 
 @import "components/components.buttons";
+@import "components/components.modal";
 
 
 

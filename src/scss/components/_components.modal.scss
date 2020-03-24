@@ -38,7 +38,7 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 .modal-open {
   overflow-y: hidden;
 
-  .modal {
+  .c-modal {
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -54,9 +54,9 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 
 
 /**
-* o-modal:          Overall container, were the modal scrolls within.
-* o-modal__dialog:  Shell div to position the modal with bottom padding.
-* o-modal__content: Actual modal.
+* c-modal:          Overall container, were the modal scrolls within.
+* c-modal__dialog:  Shell div to position the modal with bottom padding.
+* c-modal__content: Actual modal.
 */
 
 
@@ -71,7 +71,7 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 */
 
 
-.o-modal {
+.c-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -93,7 +93,7 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 }
 
 
-.o-modal__dialog {
+.c-modal__dialog {
   position: relative;
   width: auto;
   margin: $modal-dialog-margin auto;
@@ -108,7 +108,7 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 }
 
 
-.o-modal__content {
+.c-modal__content {
   position: relative;
   top: 0;
   left: 0;
@@ -120,11 +120,11 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 
 
 /**
-* o-modal__body: Where all content resides
-* - sibiling of o-modal__header & o-modal__footer
+* c-modal__body: Where all content resides
+* - sibiling of c-modal__header & c-modal__footer
 */
 
-.o-modal__body {
+.c-modal__body {
   position: relative;
   flex: 1 1 auto;
   padding: $global-spacing-unit;
@@ -152,11 +152,11 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 
 
 /**
-* Backdrop must be a child of o-modal for proper z-index order
+* Backdrop must be a child of c-modal for proper z-index order
 */
 
 
-.o-modal__backdrop {
+.c-modal__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -187,14 +187,14 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 
 
 
-.o-modal__dialog--scrollable {
+.c-modal__dialog--scrollable {
   max-height: calc(100% - #{$modal-dialog-margin} * 2);
 
-  .o-modal__content {
+  .c-modal__content {
     max-height: calc(100vh - #{$modal-dialog-margin} * 2);
     overflow: hidden;
   }
-  .o-modal__body {  
+  .c-modal__body {  
     overflow-y: auto;
   }
 }
@@ -204,7 +204,7 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 * 1. Center modal__content
 */
 
-.o-modal__dialog--centered {
+.c-modal__dialog--centered {
   display: flex;                                                 /* 1 */
   align-items: center;                                           /* 1 */
   max-height: calc(100vh - #{$modal-dialog-margin} * 2);
