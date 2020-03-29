@@ -17,9 +17,9 @@
 
 
 .o-wrapper {
-  max-width: 128rem;
-  padding-right: $global-spacing-unit;    
-  padding-left: $global-spacing-unit;     
+  max-width: rem(1280px);
+  padding-right: rem($global-spacing-unit);    
+  padding-left: rem($global-spacing-unit);     
   margin-right: auto;
   margin-left: auto;
 }
@@ -52,17 +52,17 @@
 
 
 .o-wrapper--tiny {
-  max-width: 60rem;
+  max-width: rem(600px);
 }
 
 .o-wrapper--small {
-  max-width: 80rem;
+  max-width: rem(800px);
 }
 
 .o-wrapper--large {
-  max-width: 148rem;
+  max-width: rem(1480px);
 }
 
 .o-wrapper--huge {
-  max-width: 200rem;
+  max-width: rem(2000px);
 }

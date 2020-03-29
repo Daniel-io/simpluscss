@@ -22,25 +22,25 @@
 
 
 .u-h1 {
-  font-size: $font-size-h1 !important;
+  font-size: rem($font-size-h1) !important;
 }
 
 .u-h2 {
-  font-size: $font-size-h2 !important;
+  font-size: rem($font-size-h2) !important;
 }
 
 .u-h3 {
-  font-size: $font-size-h3 !important;
+  font-size: rem($font-size-h3) !important;
 }
 
 .u-h4 {
-  font-size: $font-size-h4 !important;
+  font-size: rem($font-size-h4) !important;
 }
 
 .u-h5 {
-  font-size: $font-size-h5 !important;
+  font-size: rem($font-size-h5) !important;
 }
 
 .u-h6 {
-  font-size: $font-size-h6!important;
+  font-size: rem($font-size-h6)!important;
 }

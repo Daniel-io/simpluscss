@@ -12,8 +12,8 @@
 
 
 .o-band {
-  padding-top: $global-spacing-unit;
-  padding-bottom: $global-spacing-unit;
+  padding-top: rem($global-spacing-unit);
+  padding-bottom: rem($global-spacing-unit);
 }
 
 
@@ -38,23 +38,23 @@
 
 
 .o-band--tiny {
-  padding-top: $global-spacing-unit-tiny;
-  padding-bottom: $global-spacing-unit-tiny;
+  padding-top: rem($global-spacing-unit-tiny);
+  padding-bottom: rem($global-spacing-unit-tiny);
 }
   
 .o-band--small {
-  padding-top: $global-spacing-unit-small;
-  padding-bottom: $global-spacing-unit-small;
+  padding-top: rem($global-spacing-unit-small);
+  padding-bottom: rem($global-spacing-unit-small);
 }
   
 .o-band--large {
-  padding-top: $global-spacing-unit-large;
-  padding-bottom: $global-spacing-unit-large;
+  padding-top: rem($global-spacing-unit-large);
+  padding-bottom: rem($global-spacing-unit-large);
 }
 
 .o-band--huge {
-  padding-top: $global-spacing-unit-huge;
-  padding-bottom: $global-spacing-unit-huge;
+  padding-top: rem($global-spacing-unit-huge);
+  padding-bottom: rem($global-spacing-unit-huge);
 }
 
 

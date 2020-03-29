@@ -20,7 +20,7 @@ $index-top:    3000;            /* 1 */
 $index-middle: 2000;            /* 1 */
 $index-bottom: 1000;            /* 1 */
 
-$modal-dialog-margin: 1.75rem;  /* 2 */
+$modal-dialog-margin: 28px;     /* 2 */
 
 
 
@@ -82,8 +82,8 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
   z-index: $index-bottom;
   transition: opacity .4s;
   
-  opacity: 0;                /* 2 */
-  visibility: hidden; 
+  // opacity: 0;                /* 2 */
+  // visibility: hidden; 
 
 
   &.is-open {
@@ -96,14 +96,14 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 .c-modal__dialog {
   position: relative;
   width: auto;
-  margin: $modal-dialog-margin auto;
+  margin: rem($modal-dialog-margin) auto;
   z-index: $index-top;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding-left: rem(28px);
+  padding-right: rem(28px);
 
 
   @include mq(small) {
-    max-width: 100rem;
+    max-width: rem(1000px);
   }
 }
 
@@ -127,7 +127,7 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 .c-modal__body {
   position: relative;
   flex: 1 1 auto;
-  padding: $global-spacing-unit;
+  padding: rem($global-spacing-unit);
 }
 
 
@@ -188,10 +188,10 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 
 
 .c-modal__dialog--scrollable {
-  max-height: calc(100% - #{$modal-dialog-margin} * 2);
+  max-height: calc(100% - #{rem($modal-dialog-margin)} * 2);
 
   .c-modal__content {
-    max-height: calc(100vh - #{$modal-dialog-margin} * 2);
+    max-height: calc(100vh - #{rem($modal-dialog-margin)} * 2);
     overflow: hidden;
   }
   .c-modal__body {  
@@ -207,11 +207,11 @@ $modal-dialog-margin: 1.75rem;  /* 2 */
 .c-modal__dialog--centered {
   display: flex;                                                 /* 1 */
   align-items: center;                                           /* 1 */
-  max-height: calc(100vh - #{$modal-dialog-margin} * 2);
+  max-height: calc(100vh - #{rem($modal-dialog-margin)} * 2);;
 
   &::before {
     display: block; // IE10
-    height:  calc(100vh - #{$modal-dialog-margin} * 2);
+    height:  calc(100vh - #{rem($modal-dialog-margin)} * 2);
     content: "";
   }
 }

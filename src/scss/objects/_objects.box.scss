@@ -22,7 +22,7 @@
  
 .o-box {
   display: block;   /* 1 */
-  padding: $global-spacing-unit;
+  padding: rem($global-spacing-unit);
   @include clearfix;
 }
 
@@ -56,19 +56,19 @@
 }
 
 .o-box--tiny {
-  padding: $global-spacing-unit-tiny;
+  padding: rem($global-spacing-unit-tiny);
 }
 
 .o-box--small {
-  padding: $global-spacing-unit-small;
+  padding: rem($global-spacing-unit-small);
 }
 
 .o-box--large {
-  padding: $global-spacing-unit-large;
+  padding: rem($global-spacing-unit-large);
 }
 
 .o-box--huge {
-  padding: $global-spacing-unit-huge;
+  padding: rem($global-spacing-unit-huge);
 }
 
 

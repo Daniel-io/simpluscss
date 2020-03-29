@@ -24,13 +24,13 @@
 
 html {
   /* Box model */
-  min-height: 100vh;                          /* 1 */
-  overflow-y: scroll;                         /* 2 */
+  min-height: 100vh;                             /* 1 */
+  overflow-y: scroll;                            /* 2 */
 
   /* Typography */
-  font-family: 'Lato', sans-serif;            /* 3 */
-  font-size:  $global-font-baseline;          /* 3 */
-  line-height: $global-font-height;           /* 3 */
+  font-family: 'Lato', sans-serif;                /* 3 */
+  font-size: ($global-font-size / 16px) * 1em;    /* 3 */
+  line-height: $global-line-height;               /* 3 */
 
   /* Visual */
   background-color: $color-white;
@@ -40,20 +40,16 @@ html {
 
   
   @include mq(small) {
-    font-size:  $global-font-baseline-small;         
+    font-size: ($global-font-size-small / 16px) * 1em;    /* 3 */
   }
 
   @include mq(medium) {
-    font-size:  $global-font-baseline-medium;         
+    font-size: ($global-font-size-medium / 16px) * 1em;    /* 3 */     
   }
-}
 
-
-
-
-
-body {
-  font-size: $global-font-size;
+  @include mq(large) {
+    font-size: ($global-font-size-large / 16px) * 1em;    /* 3 */     
+  }
 }
 
 

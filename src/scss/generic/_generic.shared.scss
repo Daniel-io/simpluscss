@@ -35,7 +35,7 @@ figure,
 hr,
 table,
 fieldset {
-  margin-bottom: $global-spacing-unit-small;
+  margin-bottom: rem($global-spacing-unit-small);
 }
  
  
@@ -47,5 +47,5 @@ fieldset {
 */
  
 dd, ol, ul {
-  margin-left: $global-spacing-unit;
+  margin-left: rem($global-spacing-unit);
 }
