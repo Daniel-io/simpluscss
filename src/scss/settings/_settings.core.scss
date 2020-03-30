@@ -26,6 +26,29 @@
 
 
 
+/*  Base typographical styles and baseline grid.
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+$global-line-height:             1.5    !default;
+   
+
+
+
+
+
+
+
+
+
 /* Global spacing units
    ========================================================================== */
 
@@ -44,11 +67,11 @@
 */
 
 
-$global-spacing-unit-tiny:   6px;
-$global-spacing-unit-small:  12px;
-$global-spacing-unit:        24px;
-$global-spacing-unit-large:  48px;
-$global-spacing-unit-huge:   96px;
+$global-spacing-unit-tiny:  .375rem;
+$global-spacing-unit-small:  .75rem;
+$global-spacing-unit:        1.5rem;
+$global-spacing-unit-large:    3rem;
+$global-spacing-unit-huge:     6rem;
 
 
 
@@ -58,14 +81,6 @@ $global-spacing-unit-huge:   96px;
 
 
 
-
-/* Layout spacing unit */
-
-$layout-spacing-unit-tiny:   1%;
-$layout-spacing-unit-small:  1.5%;
-$layout-spacing-unit:        2%;
-$layout-spacing-unit-large:  3%;
-$layout-spacing-unit-huge:   4%;
 
 
 

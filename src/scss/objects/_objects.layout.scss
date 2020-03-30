@@ -93,7 +93,7 @@
   margin:  0;                               /* 2 */
   padding: 0;                               /* 2 */
   list-style: none;                         /* 1 */
-  margin-left: -$layout-spacing-unit;       /* 3 */
+  margin-left: -$global-spacing-unit;       /* 3 */
   font-size: 0;
 }
 
@@ -118,8 +118,8 @@
   display: inline-block;                      /* 2 */
   vertical-align: top;                        /* 3 */
   width: 100%;                                /* 4 */
-  padding-left: $layout-spacing-unit;         /* 5 */
-  font-size: $global-font-size;
+  padding-left: $global-spacing-unit;         /* 5 */
+  font-size: 1rem;
 }
 
 
@@ -156,11 +156,11 @@
 
 
 .o-layout--tiny {
-  margin-left: -$layout-spacing-unit-tiny;
+  margin-left: -$global-spacing-unit-tiny;
 }
 
 .o-layout--tiny > .o-layout__item {
-  padding-left: $layout-spacing-unit-tiny;
+  padding-left: $global-spacing-unit-tiny;
 }
 
 
@@ -168,11 +168,11 @@
 
 
 .o-layout--small {
-  margin-left: -$layout-spacing-unit-small;
+  margin-left: -$global-spacing-unit-small;
 }
 
 .o-layout--small > .o-layout__item {
-  padding-left: $layout-spacing-unit-small;
+  padding-left: $global-spacing-unit-small;
 }
 
 
@@ -180,11 +180,11 @@
 
 
 .o-layout--large {
-  margin-left: -$layout-spacing-unit-large;
+  margin-left: -$global-spacing-unit-large;
 }
 
 .o-layout--large > .o-layout__item {
-  padding-left: $layout-spacing-unit-large;
+  padding-left: $global-spacing-unit-large;
 }
 
 
@@ -192,11 +192,11 @@
 
 
 .o-layout--huge {
-  margin-left: -$layout-spacing-unit-huge;
+  margin-left: -$global-spacing-unit-huge;
 }
 
 .o-layout--huge > .o-layout__item {
-  padding-left: $layout-spacing-unit-huge;
+  padding-left: $global-spacing-unit-huge;
 }
 
 

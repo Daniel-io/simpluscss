@@ -29,27 +29,12 @@ html {
 
   /* Typography */
   font-family: 'Lato', sans-serif;                /* 3 */
-  font-size: ($global-font-size / 16px) * 1em;    /* 3 */
+  font-size: 100%;                               /* 3 */
   line-height: $global-line-height;               /* 3 */
 
   /* Visual */
   background-color: $color-white;
   color: $color-grey-dark-3;
-
-
-
-  
-  @include mq(small) {
-    font-size: ($global-font-size-small / 16px) * 1em;    /* 3 */
-  }
-
-  @include mq(medium) {
-    font-size: ($global-font-size-medium / 16px) * 1em;    /* 3 */     
-  }
-
-  @include mq(large) {
-    font-size: ($global-font-size-large / 16px) * 1em;    /* 3 */     
-  }
 }
 
 

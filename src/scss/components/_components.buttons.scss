@@ -32,7 +32,7 @@
   display: inline-block;      /* 1 */
   vertical-align: middle;     /* 2 */
   margin: 0;                  /* 4 */
-  padding: rem($global-spacing-unit-small) rem($global-spacing-unit);
+  padding: $global-spacing-unit-small $global-spacing-unit;
 
   /* Typography */
   font: inherit;              /* 3 */
@@ -260,11 +260,11 @@
 
 
 .c-btn--small {
-  padding: rem($global-spacing-unit-tiny) rem($global-spacing-unit-small);
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
 }
 
 .c-btn--large {
-  padding: rem($global-spacing-unit-small) rem($global-spacing-unit-large);
+  padding: $global-spacing-unit-small $global-spacing-unit-large;
 }
 
 
