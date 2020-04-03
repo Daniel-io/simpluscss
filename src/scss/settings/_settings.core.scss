@@ -38,7 +38,8 @@
 
 
 
-$global-line-height:             1.5    !default;
+$global-font-size:       100%   !default;
+$global-line-height:     1.5    !default;
    
 
 
@@ -62,16 +63,22 @@ $global-line-height:             1.5    !default;
 
 
 /*  
+* There are two rules to creating Vertical Rhythm:
+*
+* Set the spaces between each element to a multiple of the baseline
+* Set the line-height of each text element to a multiple of the baseline
+*
 * It is not recommended that you modify these following variables.
 * (it can break your vertical rhythm), but if you need to, you can.
 */
 
 
-$global-spacing-unit-tiny:  .375rem;
-$global-spacing-unit-small:  .75rem;
-$global-spacing-unit:        1.5rem;
-$global-spacing-unit-large:    3rem;
-$global-spacing-unit-huge:     6rem;
+$global-spacing-unit:       ($global-line-height * 1rem);
+$global-spacing-unit-tiny:  ($global-spacing-unit / 4);
+$global-spacing-unit-small: ($global-spacing-unit / 2);
+$global-spacing-unit-large: ($global-spacing-unit * 2);
+$global-spacing-unit-huge:  ($global-spacing-unit * 4);
+
 
 
 
