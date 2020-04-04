@@ -24,6 +24,11 @@
   display: block;                   /* 1 */
   padding: $global-spacing-unit;
   @include clearfix;
+
+
+  @include mq(medium) {
+    padding: $global-spacing-unit-large;
+  }
 }
 
 .o-box > *:last-child {
@@ -71,5 +76,50 @@
   padding: $global-spacing-unit-huge;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.o-box--primary {
+  color: $color-white;
+  background-color: $color-primary;
+}
+
+.o-box--secondary {
+  color: $color-white;
+  background-color: $color-secondary;
+}
+
+.o-box--success {
+  color: $color-white;
+  background-color: $color-success;
+}
+
+.o-box--error {
+  color: $color-white;
+  background-color: $color-error;
+}
+
+.o-box--tint {
+  background-color: $color-tint;
+}
 
 

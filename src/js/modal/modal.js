@@ -15,7 +15,8 @@ const modalFunctionality = (() => {
   const modalElements = {
     modal:  document.querySelector('.js-modal'),
     closeButton:  document.querySelector('.js-closeModal'),
-    openButton:  document.querySelectorAll('.js-openModal')
+    openButton:  document.querySelectorAll('.js-openModal'),
+    backdrop: document.querySelector('.js-modalBackdrop')
   }
 
 
@@ -37,6 +38,15 @@ const modalFunctionality = (() => {
 
 
   modalElements.closeButton.addEventListener('click', _params => { 
+
+    modalElements.modal.classList.remove('is-open')
+    document.documentElement.classList.remove('modal-open');
+
+  })
+
+
+
+  modalElements.backdrop.addEventListener('click', _params => { 
 
     modalElements.modal.classList.remove('is-open')
     document.documentElement.classList.remove('modal-open');

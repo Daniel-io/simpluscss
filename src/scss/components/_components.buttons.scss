@@ -148,6 +148,26 @@
 
 
 
+.c-btn--flat,
+.c-btn--flat:link,
+.c-btn--flat:visited {
+  color: inherit;
+  background-color: unset;
+  border: unset;
+}
+
+.c-btn--flat:hover,
+.c-btn--flat:active,
+.c-btn--flat:focus {
+  color: inherit;
+  background-color: unset;
+  border: unset;
+}
+
+
+
+
+
 
 
 

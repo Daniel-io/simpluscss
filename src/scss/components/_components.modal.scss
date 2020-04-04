@@ -82,8 +82,8 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
   z-index: $index-bottom;
   transition: opacity .4s;
   
-  // opacity: 0;                /* 2 */
-  // visibility: hidden; 
+  opacity: 0;                /* 2 */
+  visibility: hidden; 
 
 
   &.is-open {
@@ -121,8 +121,9 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
 
 /**
 * c-modal__body: Where all content resides
-* - sibiling of c-modal__header & c-modal__footer
+* sibiling of c-modal__header & c-modal__footer if they exist
 */
+
 
 .c-modal__body {
   position: relative;
@@ -130,6 +131,18 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
   padding: $global-spacing-unit;
 }
 
+
+/**
+* Button to close modal
+*/
+
+
+.c-modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
 
 
 

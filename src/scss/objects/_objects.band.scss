@@ -14,6 +14,12 @@
 .o-band {
   padding-top: $global-spacing-unit;
   padding-bottom: $global-spacing-unit;
+
+
+  @include mq(medium) {
+    padding-top: $global-spacing-unit-large;
+    padding-bottom: $global-spacing-unit-large;
+  }
 }
 
 
@@ -86,6 +92,16 @@
 .o-band--secondary {
   color: $color-white;
   background-color: $color-secondary;
+}
+
+.o-band--success {
+  color: $color-white;
+  background-color: $color-success;
+}
+
+.o-band--error {
+  color: $color-white;
+  background-color: $color-error;
 }
 
 .o-band--tint {
