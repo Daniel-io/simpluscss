@@ -201,10 +201,10 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
 
 
 .c-modal__dialog--scrollable {
-  max-height: calc(100% - $modal-dialog-margin * 2);
+  max-height: calc(100% - #{$modal-dialog-margin} * 2);
 
   .c-modal__content {
-    max-height: calc(100vh - $modal-dialog-margin * 2);
+    max-height: calc(100vh - #{$modal-dialog-margin} * 2);
     overflow: hidden;
   }
   .c-modal__body {  
@@ -220,11 +220,11 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
 .c-modal__dialog--centered {
   display: flex;                                                 /* 1 */
   align-items: center;                                           /* 1 */
-  max-height: calc(100vh - $modal-dialog-margin * 2);;
+  max-height: calc(100vh - #{$modal-dialog-margin} * 2);;
 
   &::before {
     display: block; // IE10
-    height:  calc(100vh - $modal-dialog-margin * 2);
+    height:  calc(100vh -  #{$modal-dialog-margin} * 2);
     content: "";
   }
 }
