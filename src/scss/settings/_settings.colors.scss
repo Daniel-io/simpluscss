@@ -16,36 +16,32 @@
 */
 
 
-// Colour palette.
-$color-primary:                     #007bff !default;
-$color-primary-highlight:           lighten($color-primary, 5%) !default;
-$color-primary-shadow:              darken($color-primary,  5%) !default;
-
-$color-secondary:                   #ffc107 !default;
-$color-secondary-highlight:         lighten($color-secondary, 5%) !default;
-$color-secondary-shadow:            darken($color-secondary,  5%) !default;
-
-$color-success:                     #28a745 !default;
-$color-success-highlight:           lighten($color-success, 5%) !default;
-$color-success-shadow:              darken($color-success,  5%) !default;
-
-$color-error:                       #dc3545 !default;
-$color-error-highlight:             lighten($color-error, 5%) !default;
-$color-error-shadow:                darken($color-error,  5%) !default;
-
-$color-white:                       #fff !default;
-
-$color-grey-light:                  #F1F9F9 !default;
-$color-grey-light-1:                #F4F2F2 !default;
-$color-grey-light-2:                #F0EEEE !default;
-$color-grey-light-3:                #CCCCCC !default;
-
-$color-grey-dark:                   #333 !default;
-$color-grey-dark-1:                 #777 !default;
-$color-grey-dark-2:                 #999 !default;
-$color-grey-dark-3:                 #666 !default;
+$white:                 #fff !default;
+$gray-100:              #f8f9fa !default;
+$gray-200:              #e9ecef !default;
+$gray-300:              #dee2e6 !default;
+$gray-400:              #ced4da !default;
+$gray-500:              #adb5bd !default;
+$gray-600:              #6c757d !default;
+$gray-700:              #495057 !default;
+$gray-800:              #343a40 !default;
+$gray-900:              #212529 !default;
+$black:                 #000 !default;
 
 
+// Theme palette.
+$blue:                  #007bff !default;
+$indigo:                #6610f2 !default;
+$purple:                #6f42c1 !default;
+$pink:                  #e83e8c !default;
+$red:                   #dc3545 !default;
+$orange:                #fd7e14 !default;
+$yellow:                #ffc107 !default;
+$green:                 #28a745 !default;
+$teal:                  #20c997 !default;
+$cyan:                  #17a2b8 !default;
+
+             
 
 
 
@@ -66,7 +62,27 @@ $color-grey-dark-3:                 #666 !default;
 
 
 
-$color-tint:                $color-grey-light-1;
+$color-primary:                     $blue !default;
+$color-primary-highlight:           lighten($color-primary, 5%) !default;
+$color-primary-shadow:              darken($color-primary,  5%) !default;
+
+$color-secondary:                   $yellow !default;
+$color-secondary-highlight:         lighten($color-secondary, 5%) !default;
+$color-secondary-shadow:            darken($color-secondary,  5%) !default;
+
+$color-tertiary:                    $indigo !default;
+$color-tertiary-highlight:          lighten($color-tertiary, 5%) !default;
+$color-tertiary-shadow:             darken($color-tertiary,  5%) !default;
+
+$color-success:                     $green !default;
+$color-success-highlight:           lighten($color-success, 5%) !default;
+$color-success-shadow:              darken($color-success,  5%) !default;
+
+$color-error:                       $red !default;
+$color-error-highlight:             lighten($color-error, 5%) !default;
+$color-error-shadow:                darken($color-error,  5%) !default;
+
+$color-tint:                        $gray-300;
 
 
 

@@ -16,12 +16,12 @@
 * 2. Set margin. (will be base for proper max height).
 */
 
-$index-top:    3000;              /* 1 */
-$index-middle: 2000;              /* 1 */
-$index-bottom: 1000;              /* 1 */
+$zindex-dialog   :    1060;                    /* 1 */
+$zindex-backdrop :    1050;                    /* 1 */
+$zindex-modal    :    1040;                    /* 1 */
 
-$modal-dialog-margin: $global-spacing-unit;     /* 2 */
-
+$modal-dialog-margin: $global-spacing-unit;    /* 2 */
+$modal-dialog-padding: $global-spacing-unit; 
 
 
 
@@ -79,7 +79,7 @@ $modal-dialog-margin: $global-spacing-unit;     /* 2 */
   height: 100%;
   overflow: hidden;
   outline: 0;                /* 1 */
-  z-index: $index-bottom;
+  z-index: $zindex-modal;
   transition: opacity .4s;
   
   opacity: 0;                /* 2 */
@@ -97,13 +97,13 @@ $modal-dialog-margin: $global-spacing-unit;     /* 2 */
   position: relative;
   width: auto;
   margin: $modal-dialog-margin auto;
-  z-index: $index-top;
-  padding-left: $global-spacing-unit;
-  padding-right: $global-spacing-unit;
+  z-index: $zindex-dialog;
+  padding-left: $modal-dialog-padding;
+  padding-right: $modal-dialog-padding;
 
 
   @include mq(small) {
-    max-width: 1000px;
+    max-width: 800px;
   }
 }
 
@@ -115,12 +115,44 @@ $modal-dialog-margin: $global-spacing-unit;     /* 2 */
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: $color-white;
+  background-color: $white;
 }
 
 
 /**
-* c-modal__body: Where all content resides
+* Header contains  title and close button 
+* sibiling of c-modal__body & c-modal__footer if they exist
+*/
+
+
+$modal-title-line-height: 1.5;
+$modal-padding: $global-spacing-unit-small;
+
+
+.c-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $modal-padding;
+  border-bottom: 1px solid $gray-300;
+
+  .c-modal__title {
+    margin-bottom: 0;
+    line-height: $modal-title-line-height;
+  }
+
+  .close {
+    padding: $modal-padding;
+    margin-top: -$modal-padding;
+    margin-right: -$modal-padding;
+    margin-bottom: -$modal-padding;
+    margin-left: auto;
+  }
+}
+
+
+/**
+* Where all content resides
 * sibiling of c-modal__header & c-modal__footer if they exist
 */
 
@@ -128,23 +160,34 @@ $modal-dialog-margin: $global-spacing-unit;     /* 2 */
 .c-modal__body {
   position: relative;
   flex: 1 1 auto;
-  padding: $global-spacing-unit;
+  padding: $modal-padding;
+
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: calc(#{$modal-padding} / 2);
+    line-height: .5;
+  }
 }
 
 
-/**
-* Button to close modal
-*/
+// Footer (for actions/buttons)
+.c-modal__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; // vertically center
+  justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
+  padding: $modal-padding;
+  border-top: 1px solid $gray-300;
 
-
-.c-modal__close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  line-height: 0;
-  cursor: pointer;
+  & > * {
+    margin: .25rem;
+  }
 }
+
+
 
 
 
@@ -178,7 +221,7 @@ $modal-dialog-margin: $global-spacing-unit;     /* 2 */
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, .2);
-  z-index: $index-middle;
+  z-index: $zindex-backdrop;
 }
 
 

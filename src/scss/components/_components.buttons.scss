@@ -41,6 +41,7 @@
 
   /* Visual */
   cursor: pointer;            /* 5 */
+  border: unset;
   border-radius: $global-radius;
 
   /* Misc */
@@ -71,7 +72,7 @@
 .c-btn--primary,
 .c-btn--primary:link,
 .c-btn--primary:visited {
-  color: $color-white;
+  color: $white;
   background-color: $color-primary;
   border: 1px solid $color-primary;
   border-radius: $global-radius;
@@ -91,7 +92,7 @@
 .c-btn--secondary,
 .c-btn--secondary:link,
 .c-btn--secondary:visited {
-  color: $color-white;
+  color: $white;
   background-color: $color-secondary;
   border: 1px solid $color-secondary;
   border-radius: $global-radius;
@@ -108,10 +109,30 @@
 
 
 
+.c-btn--tertiary,
+.c-btn--tertiary:link,
+.c-btn--tertiary:visited {
+  color: $white;
+  background-color: $color-tertiary;
+  border: 1px solid $color-tertiary;
+  border-radius: $global-radius;
+}
+
+.c-btn--tertiary:hover,
+.c-btn--tertiary:active,
+.c-btn--tertiary:focus {
+  background-color: $color-tertiary-shadow;
+  border: 1px solid $color-tertiary-shadow;
+}
+
+
+
+
+
 .c-btn--success,
 .c-btn--success:link,
 .c-btn--success:visited {
-  color: $color-white;
+  color: $white;
   background-color: $color-success;
   border: 1px solid $color-success;
   border-radius: $global-radius;
@@ -131,7 +152,7 @@
 .c-btn--error,
 .c-btn--error:link,
 .c-btn--error:visited {
-  color: $color-white;
+  color: $white;
   background-color: $color-error;
   border: 1px solid $color-error;
   border-radius: $global-radius;
@@ -142,6 +163,24 @@
 .c-btn--error:focus {
   background-color: $color-error-shadow;
   border: 1px solid $color-error-shadow;
+}
+
+
+
+
+
+.c-btn--link,
+.c-btn--link:link,
+.c-btn--link:visited {
+  color: $blue;
+  background-color: unset;
+  border: unset;
+}
+
+.c-btn--link:hover,
+.c-btn--link:active,
+.c-btn--link:focus {
+  text-decoration: underline;
 }
 
 
@@ -201,7 +240,7 @@
 .c-btn--ghost-primary:active,
 .c-btn--ghost-primary:focus {
   background-color: $color-primary;;
-  color: #fff;
+  color: $white;
 }
 
 
@@ -219,7 +258,25 @@
 .c-btn--ghost-secondary:active,
 .c-btn--ghost-secondary:focus {
   background-color: $color-secondary;
-  color: #fff;
+  color: $white;
+}
+
+
+
+
+
+.c-btn--ghost-tertiary, 
+.c-btn--ghost-tertiary:link, 
+.c-btn--ghost-tertiary:visited {
+  color: $color-tertiary;
+  border: 1px solid $color-tertiary;
+}
+
+.c-btn--ghost-tertiary:hover,
+.c-btn--ghost-tertiary:active,
+.c-btn--ghost-tertiary:focus {
+  background-color: $color-tertiary;
+  color: $white;
 }
 
 
@@ -237,7 +294,7 @@
 .c-btn--ghost-success:active,
 .c-btn--ghost-success:focus {
   background-color: $color-success;
-  color: #fff;
+  color: $white;
 }
 
 
@@ -255,7 +312,7 @@
 .c-btn--ghost-error:active,
 .c-btn--ghost-error:focus {
   background-color: $color-error;
-  color: #fff;
+  color: $white;
 }
 
 

@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #POSITION
+   ========================================================================== */
+
+
+
+
+
+$zindex-sticky:  1020;
+$zindex-fixed :  1030;
+
+
+
+
+
+.u-fixed-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-fixed;
+}
+
+.u-fixed-bottom {
+  position: fixed !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-fixed;
+}
+
+.u-sticky-top {
+  @supports (position: sticky) {
+    position: sticky !important;
+    top: 0;
+    z-index: $zindex-sticky;
+  }
+}

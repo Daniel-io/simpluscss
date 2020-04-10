@@ -26,7 +26,7 @@
   @include clearfix;
 
 
-  @include mq(medium) {
+  @include mq(large) {
     padding: $global-spacing-unit-large;
   }
 }
@@ -99,22 +99,27 @@
 
 
 .o-box--primary {
-  color: $color-white;
+  color: $white;
   background-color: $color-primary;
 }
 
 .o-box--secondary {
-  color: $color-white;
+  color: $white;
   background-color: $color-secondary;
 }
 
+.o-box--tertiary {
+  color: $white;
+  background-color: $color-tertiary;
+}
+
 .o-box--success {
-  color: $color-white;
+  color: $white;
   background-color: $color-success;
 }
 
 .o-box--error {
-  color: $color-white;
+  color: $white;
   background-color: $color-error;
 }
 
