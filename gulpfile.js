@@ -49,6 +49,7 @@ function server(cb) {
 
 
 
+
 /**
  *  1. Compile sass stylesheets
  *  2. Include needed prefixes 
@@ -87,8 +88,6 @@ function js() {
   .pipe(dest('docs/js'))                                    /* 3 */           
   .pipe(browserSync.stream())
 }
-
-
 
 
 

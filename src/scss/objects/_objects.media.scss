@@ -39,13 +39,8 @@
 }
 
 .o-media__img {
-  float: unset;
-
-
-  @include mq(small) {
-    float: left;
-    margin-right: 2rem;
-  }
+  float: left;
+  margin-right: $global-spacing-unit;
 }
 
 .o-media__img img {
@@ -71,7 +66,38 @@
 
 
 
-/* Style variants
+/* Reversed media objects
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.o-media--reverse {
+
+  > .o-media__img {
+    float: right;
+    margin-right: 0;
+    margin-left: $global-spacing-unit;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* UI variants
    ========================================================================== */
 
 
@@ -92,7 +118,14 @@
 .o-media--shape .o-media__body {
   overflow: unset;
 }
-  
+
+
+
+
+
+
+
+
 
 
 
