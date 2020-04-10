@@ -11,6 +11,22 @@
 
 
 
+/**
+ * 1. Modal button includes: data-toggle="modal", data-target="#yourID"
+ * 2. Modal includes: ID, class: js-modal
+ * 3. c-modal__content includes: js-modalCondtent
+ * 4. Close button includes: data-dismiss="modal"
+ */
+
+
+
+
+
+
+
+
+
+
 const simplusModal = () => {
 
 
@@ -34,7 +50,7 @@ const simplusModal = () => {
 
   const selector = {
     MODAL         :  document.querySelectorAll('.js-modal'),
-    MODAL_CONTENT :  document.querySelectorAll('.js-modal__content'),
+    MODAL_CONTENT :  document.querySelectorAll('.js-modalContent'),
     DATA_TOGGLE   :  document.querySelectorAll('[data-toggle="modal"]'),
     DATA_DISMISS  :  document.querySelectorAll('[data-dismiss="modal"]')
   }
@@ -53,15 +69,9 @@ const simplusModal = () => {
 
 
 
-  let toggle = (elements, event, callback) => {
-    if (elements.length) {  //Is elements more than one element 
-      elements.forEach(element => element.addEventListener(event, callback));
-
-    } else {
-      return  elements.addEventListener(event, callback);
-
-    }
-   }
+  let toggle = (node, event, callback) => {
+    node.forEach(element => element.addEventListener(event, callback));
+  }
 
 
 
@@ -80,15 +90,18 @@ const simplusModal = () => {
 
   //Show modal
   toggle(selector.DATA_TOGGLE, 'click', function(_params){
-
+    
     // Access button's target ID
     const target = this.dataset.target;
-
+    
     //Access modal matching taret ID
     let modal = document.querySelector(target);
 
+    //Add class that displays modal
     modal.classList.add('is-open');
-    document.documentElement.classList.add('modal-open');
+
+    //Add class that prevents body scroll
+    document.documentElement.classList.add('js-modal-open');
     
   })
 
@@ -98,10 +111,15 @@ const simplusModal = () => {
 
   //Dismiss modal
   toggle(selector.DATA_DISMISS, 'click', function (_params) {
-  
-    if(this.closest('.c-modal').classList.contains('is-open')) {
-      this.closest('.c-modal').classList.remove('is-open') 
-      document.documentElement.classList.remove('modal-open');
+    
+    //If modal is open
+    if(this.closest('.js-modal').classList.contains('is-open')) {
+
+      //Remove class that displays modal
+      this.closest('.js-modal').classList.remove('is-open') 
+
+      //Remove class that prevents body scroll
+      document.documentElement.classList.remove('js-modal-open');
     }
     
   })
@@ -113,14 +131,18 @@ const simplusModal = () => {
   //Dismiss modal by outside click
   toggle(selector.MODAL, 'click', function (event) {
 
-
     //If it can't find class name in ancestry the click is outside
-    const isOutside = !event.target.closest('.c-modal__content');
+    const isOutside = !event.target.closest('.js-modalContent');
     
     if(isOutside) {
-      if(event.target.closest('.c-modal').classList.contains('is-open')) {
-        event.target.closest('.c-modal').classList.remove('is-open') 
-        document.documentElement.classList.remove('modal-open');
+      //If modal is open
+      if(event.target.closest('.js-modal').classList.contains('is-open')) {
+
+        //Remove class that displays modal
+        event.target.closest('.js-modal').classList.remove('is-open') 
+
+        //Remove class that prevents body scroll
+        document.documentElement.classList.remove('js-modal-open');
       }
     }
 
@@ -139,7 +161,8 @@ const simplusModal = () => {
 
 
 
-// simplusModal();
+// Initialize modal functionality
+simplusModal();
 
 
 

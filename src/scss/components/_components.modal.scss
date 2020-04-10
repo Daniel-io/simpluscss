@@ -16,11 +16,11 @@
 * 2. Set margin. (will be base for proper max height).
 */
 
-$index-top:    3000;            /* 1 */
-$index-middle: 2000;            /* 1 */
-$index-bottom: 1000;            /* 1 */
+$index-top:    3000;              /* 1 */
+$index-middle: 2000;              /* 1 */
+$index-bottom: 1000;              /* 1 */
 
-$modal-dialog-margin: 2.8rem;     /* 2 */
+$modal-dialog-margin: $global-spacing-unit;     /* 2 */
 
 
 
@@ -35,7 +35,7 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
 */
 
 
-.modal-open {
+.js-modal-open {
   overflow-y: hidden;
 
   .c-modal {
@@ -141,6 +141,8 @@ $modal-dialog-margin: 2.8rem;     /* 2 */
   position: absolute;
   top: 0;
   right: 0;
+  padding: 1rem;
+  line-height: 0;
   cursor: pointer;
 }
 
