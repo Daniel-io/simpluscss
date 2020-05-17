@@ -14,7 +14,7 @@
 /**
  * 1. Modal button includes: data-toggle="modal", data-target="#yourID"
  * 2. Modal includes: ID, class: js-modal
- * 3. c-modal__content includes: js-modalCondtent
+ * 3. c-modal__content includes: js-modalContent
  * 4. Close button includes: data-dismiss="modal"
  */
 
@@ -28,7 +28,6 @@
 
 
 const simplusModal = () => {
-
 
 
 
@@ -56,7 +55,7 @@ const simplusModal = () => {
   }
 
 
-
+  
 
 
 /**
@@ -97,6 +96,7 @@ const simplusModal = () => {
     //Access modal matching taret ID
     let modal = document.querySelector(target);
 
+    
     //Add class that displays modal
     modal.classList.add('is-open');
 
