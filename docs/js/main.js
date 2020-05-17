@@ -16,6 +16,7 @@
  * 2. Modal includes: ID, class: js-modal
  * 3. c-modal__content includes: js-modalContent
  * 4. Close button includes: data-dismiss="modal"
+ * 5. data-target should include "#"" ex:  data-target="#example"
  */
 
 
