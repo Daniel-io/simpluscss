@@ -11,6 +11,35 @@
 
 
 
+/*
+
+Example Snippet 
+
+<div class="c-modal js-modal" id="formModal">
+  <div class="c-modal__backdrop"></div>
+  <div class="c-modal__dialog">
+    <div class="c-modal__content">
+      <div class="c-modal__body">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="c-btn c-btn--primary" data-toggle="modal"  data-target="#formModal">btn</div>
+
+*/
+
+
+
+
+
+
+
+
+
+
 /**
 * 1. Set stack order for modal, backdrop and modal dialog.
 * 2. Set margin. (will be base for proper max height).
