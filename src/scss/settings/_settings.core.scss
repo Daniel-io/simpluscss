@@ -38,9 +38,25 @@
 
 
 
-$global-font-size:       100%   !default;
-$global-line-height:     1.5    !default;
-   
+/**
+*
+* tiny..........30em - 480px
+* small.........45em - 720px
+* medium........64em - 1024px
+* large.........75em - 1200px
+*
+*/
+
+
+$global-font-size          :    100%   !default;
+$global-font-size-tiny     :    100%   !default;
+$global-font-size-small    :    100%   !default;
+$global-font-size-medium   :    105%   !default;
+$global-font-size-large    :    110%   !default;
+
+$global-line-height        :    1.5    !default;
+
+
 
 
 

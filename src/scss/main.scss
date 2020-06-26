@@ -55,8 +55,8 @@
 * Wrappers.............Wrappers and page constraints.
 *
 * COMPONENTS
+* Avatar...............Avatar image.
 * Buttons..............Button styles.
-* Close................Close button.
 * Modal................Modal structure.
 *
 * UTILITIES
@@ -85,7 +85,6 @@
 
 
 @import "tools/all";
-
 
 
 
@@ -123,8 +122,8 @@
 
 
 
+@import "components/components.avatar";
 @import "components/components.buttons";
-@import "components/components.close";
 @import "components/components.modal";
 
 

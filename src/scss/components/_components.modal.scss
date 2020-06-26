@@ -18,9 +18,9 @@ Example Snippet
 <div class="c-modal js-modal" id="formModal">
   <div class="c-modal__backdrop"></div>
   <div class="c-modal__dialog">
-    <div class="c-modal__content">
+    <div class="c-modal__content js-modalContent">
       <div class="c-modal__body">
-
+      <div class="close"  data-dismiss="modal">x</div>
 
       </div>
     </div>
@@ -220,6 +220,13 @@ $modal-padding: $global-spacing-unit-small; //For modal header/body/footer
 
 
 
+.close {
+  cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -288,7 +295,9 @@ $modal-padding: $global-spacing-unit-small; //For modal header/body/footer
 
 
 /**
-* 1. Center modal__content
+* 1. Center modal__content.
+*
+* NOTE: This is used in tandem with .c-modal__dialog--scrollable 
 */
 
 .c-modal__dialog--centered {

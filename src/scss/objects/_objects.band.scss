@@ -12,8 +12,10 @@
 
 
 .o-band {
+  display: block;   
   padding-top: $global-spacing-unit;
   padding-bottom: $global-spacing-unit;
+  @include clearfix;
 
 
   @include mq(large) {
@@ -42,6 +44,11 @@
 
 
 
+
+.o-band--flush {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .o-band--tiny {
   padding-top: $global-spacing-unit-tiny;
@@ -83,32 +90,10 @@
 
 
 
-
-.o-band--primary {
-  color: $white;
-  background-color: $color-primary;
+.o-band--light {
+  color: $black;
 }
 
-.o-band--secondary {
+.o-band--dark {
   color: $white;
-  background-color: $color-secondary;
-}
-
-.o-band--tertiary {
-  color: $white;
-  background-color: $color-tertiary;
-}
-
-.o-band--success {
-  color: $white;
-  background-color: $color-success;
-}
-
-.o-band--error {
-  color: $white;
-  background-color: $color-error;
-}
-
-.o-band--tint {
-  background-color: $color-tint;
 }

@@ -35,6 +35,10 @@
   text-align: right !important;
 }
 
+.u-text-justify {
+  text-align: justify !important;
+}
+
 
 
 
@@ -66,6 +70,34 @@
 
 .u-text-capitalize {
   text-transform: capitalize !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Weight
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+.u-text-bold {
+  font-weight: bold;
+}
+
+.u-text-light {
+  font-weight: 100;
 }
 
 
