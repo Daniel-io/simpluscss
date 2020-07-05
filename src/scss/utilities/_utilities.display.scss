@@ -1,0 +1,170 @@
+/* ==========================================================================
+   #DISPLAY
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.u-display-block {
+  display: block !important;
+}
+
+.u-display-inline {
+  display: inline !important;
+}
+
+.u-display-inline-block {
+  display: inline-block !important;
+}
+
+.u-display-none {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+@include mq(tiny) {
+
+
+
+
+  .u-display-block\@ty {
+    display: block !important;
+  }
+  
+  .u-display-inline\@ty {
+    display: inline !important;
+  }
+  
+  .u-display-inline-block\@ty {
+    display: inline-block !important;
+  }
+  
+  .u-display-none\@ty {
+    display: none;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+@include mq(small) {
+
+
+
+
+  .u-display-block\@sm {
+    display: block !important;
+  }
+  
+  .u-display-inline\@sm {
+    display: inline !important;
+  }
+  
+  .u-display-inline-block\@sm {
+    display: inline-block !important;
+  }
+  
+  .u-display-none\@sm {
+    display: none;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@include mq(medium) {
+
+
+
+
+  .u-display-block\@md {
+    display: block !important;
+  }
+  
+  .u-display-inline\@md {
+    display: inline !important;
+  }
+  
+  .u-display-inline-block\@md {
+    display: inline-block !important;
+  }
+  
+  .u-display-none\@md {
+    display: none;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@include mq(large) {
+
+
+
+
+  .u-display-block\@lg {
+    display: block !important;
+  }
+  
+  .u-display-inline\@lg {
+    display: inline !important;
+  }
+  
+  .u-display-inline-block\@lg {
+    display: inline-block !important;
+  }
+  
+  .u-display-none\@lg {
+    display: none;
+  }
+
+
+
+
+
+
+}

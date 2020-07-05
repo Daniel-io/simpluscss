@@ -12,7 +12,7 @@
 
 
 /**
-* inuitcss generates a series of utility classes that give a fluid width to
+* simpluscss generates a series of utility classes that give a fluid width to
 * whichever element they’re applied, e.g.:
 *
 *   <img src="" alt="" class="u-1/2" />
@@ -23,7 +23,7 @@
 *   <div class="o-layout__item  u-1/2">
 *
 *
-* Optionally, inuitcss can generate offset classes which can push and pull
+* Optionally, simpluscss can generate offset classes which can push and pull
 * elements left and right by a specified amount, e.g.:
 *
 *   <div class="o-layout__item  u-2/3  u-pull-1/3">
@@ -366,8 +366,353 @@
 
 
 
-@media (min-width: 45em) {
+@include mq(tiny) {
+
+
+
+
+
+
+
+
+
+/* Whole
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+  .u-1\/1\@ty {
+    width: 100% !important;
+  }
+
+  .u-push-1\/1\@ty {
+    position: relative;
+    left: 100% !important;
+  }
+
+  .u-pull-1\/1\@ty {
+    position: relative;
+    right: 100% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+/* halves
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+  .u-1\/2\@ty {
+    width: 50% !important;
+  }
+
+  .u-push-1\/2\@ty {
+    position: relative;
+    left: 50% !important;
+  }
+
+  .u-pull-1\/2\@ty {
+    position: relative;
+    right: 50% !important;
+  }
+
+
+  .u-2\/2\@ty {
+    width: 100% !important;
+  }
+
+  .u-push-2\/2\@ty {
+    position: relative;
+    left: 100% !important;
+  }
+
+  .u-pull-2\/2\@ty {
+    position: relative;
+    right: 100% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Thirds
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+  .u-1\/3\@ty {
+    width: 33.333333333% !important;
+  }
+
+  .u-push-1\/3\@ty {
+    position: relative;
+    left: 33.333333333% !important;
+  }
+
+  .u-pull-1\/3\@ty {
+    position: relative;
+    right: 33.333333333% !important;
+  }
+
+
+  .u-2\/3\@ty {
+    width: 66.666666667% !important;
+  }
+
+  .u-push-2\/3\@ty {
+    position: relative;
+    left: 66.666666667% !important;
+  }
+
+  .u-pull-2\/3\@ty {
+    position: relative;
+    right: 66.666666667% !important;
+  }
+
+
+  .u-3\/3\@ty {
+    width: 100% !important;
+  }
+
+  .u-push-3\/3\@ty {
+    position: relative;
+    left: 100% !important;
+  }
+
+  .u-pull-3\/3\@ty {
+    position: relative;
+    right: 100% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Fourths
+   ========================================================================== */
+   
+   
+
+
+
+
+
+
+
+
+  .u-1\/4\@ty {
+    width: 25% !important;
+  }
+
+  .u-push-1\/4\@ty {
+    position: relative;
+    left: 25% !important;
+  }
+
+  .u-pull-1\/4\@ty {
+    position: relative;
+    right: 25% !important;
+  }
+
+
+  .u-2\/4\@ty {
+    width: 50% !important;
+  }
+
+  .u-push-2\/4\@ty {
+    position: relative;
+    left: 50% !important;
+  }
+
+  .u-pull-2\/4\@ty {
+    position: relative;
+    right: 50% !important;
+  }
+
+
+  .u-3\/4\@ty {
+    width: 75% !important;
+  }
+
+  .u-push-3\/4\@ty {
+    position: relative;
+    left: 75% !important;
+  }
+
+  .u-pull-3\/4\@ty {
+    position: relative;
+    right: 75% !important;
+  }
+
+
+  .u-4\/4\@ty {
+    width: 100% !important;
+  }
+
+  .u-push-4\/4\@ty {
+    position: relative;
+    left: 100% !important;
+  }
+
+  .u-pull-4\/4\@ty {
+    position: relative;
+    right: 100% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Fifths
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+  .u-1\/5\@ty {
+    width: 20% !important;
+  }
+
+  .u-push-1\/5\@ty {
+    position: relative;
+    left: 20% !important;
+  }
+
+  .u-pull-1\/5\@ty {
+    position: relative;
+    right: 20% !important;
+  }
+
+
+  .u-2\/5\@ty {
+    width: 40% !important;
+  }
+
+  .u-push-2\/5\@ty {
+    position: relative;
+    left: 40% !important;
+  }
+
+  .u-pull-2\/5\@ty {
+    position: relative;
+    right: 40% !important;
+  }
+
+
+  .u-3\/5\@ty {
+    width: 60% !important;
+  }
+
+  .u-push-3\/5\@ty {
+    position: relative;
+    left: 60% !important;
+  }
+
+  .u-pull-3\/5\@ty {
+    position: relative;
+    right: 60% !important;
+  }
+
+
+  .u-4\/5\@ty {
+    width: 80% !important;
+  }
+
+  .u-push-4\/5\@ty {
+    position: relative;
+    left: 80% !important;
+  }
+
+  .u-pull-4\/5\@ty {
+    position: relative;
+    right: 80% !important;
+  }
+
+
+  .u-5\/5\@ty {
+    width: 100% !important;
+  }
+
+  .u-push-5\/5\@ty {
+    position: relative;
+    left: 100% !important;
+  }
+
+  .u-pull-5\/5\@ty {
+    position: relative;
+    right: 100% !important;
+  }
+
+
+
+
+
+
+
+
+
   
+}
+
+
+
+
+
+
+
+
+
+
+@include mq(small) {
 
 
 
@@ -713,7 +1058,7 @@
 
 
 
-@media (min-width: 64em) {
+@include mq(medium) {
   
 
 
@@ -1060,7 +1405,7 @@
 
 
 
-@media (min-width: 75em) {
+@include mq(large) {
  
 
 

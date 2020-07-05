@@ -40,6 +40,7 @@ Example Snippet
 
 
 
+
 /**
 * 1. Set stack order for modal, backdrop and modal dialog.
 * 2. Set margin. (will be base for proper max height).
@@ -92,6 +93,12 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 
+
+
+
+
+
+
 /**
 * o-modal is direct parent of .o-modal__dialog
 *
@@ -112,7 +119,7 @@ $modal-dialog-padding: $global-spacing-unit;
   transition: opacity .4s;
   
   opacity: 0;                /* 2 */
-  visibility: hidden; 
+  visibility: hidden;        /* 2 */
 
 
   &.is-open {

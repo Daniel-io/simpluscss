@@ -97,34 +97,11 @@
 
 
 
+.o-box--light {
+  color: $black;
+}
 
-.o-box--primary {
+.o-box--dark {
   color: $white;
-  background-color: $color-primary;
 }
-
-.o-box--secondary {
-  color: $white;
-  background-color: $color-secondary;
-}
-
-.o-box--tertiary {
-  color: $white;
-  background-color: $color-tertiary;
-}
-
-.o-box--success {
-  color: $white;
-  background-color: $color-success;
-}
-
-.o-box--error {
-  color: $white;
-  background-color: $color-error;
-}
-
-.o-box--tint {
-  background-color: $color-tint;
-}
-
 

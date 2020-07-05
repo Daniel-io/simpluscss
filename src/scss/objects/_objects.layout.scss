@@ -379,7 +379,7 @@
 
 
 
-/* Auto-widths modifier
+/* layout-item width modifier
    ========================================================================== */
 
 
@@ -400,3 +400,12 @@
   width: auto;
 }
 
+
+/**
+* Cause layout items to take 100% of the available width
+*/
+
+
+.o-layout--full > .o-layout__item {
+  width: 100%;
+}
