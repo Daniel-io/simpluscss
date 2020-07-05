@@ -1,0 +1,236 @@
+/* ==========================================================================
+   #LIST-GROUP
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.c-list-group {
+   /* Box-model */
+   display: flex;
+   flex-direction: column;
+   padding-left: 0;
+   margin-left: 0;
+   margin-bottom: 0;
+   border-radius: $global-radius;
+
+   /* Visual */
+   list-style: none;
+}
+
+.c-list-group__item {
+   position: relative;
+   display: block;
+   padding: $global-spacing-unit-tiny;
+   border: 1px solid rgba(0,0,0, .125);
+}
+
+.c-list-group__item + .c-list-group__item {
+   border-top-width: 0;
+}
+
+
+//Set list containers border radius
+.c-list-group__item:first-child {
+   border-top-left-radius: inherit;
+   border-top-right-radius: inherit;
+}
+
+.c-list-group__item:last-child {
+   border-bottom-left-radius: inherit;
+   border-bottom-right-radius: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+/* Direction variant
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+   
+.c-list-group--horizontal {
+   flex-direction: row;
+
+   > * { flex: 1;}
+}
+
+.c-list-group--horizontal > .c-list-group__item:first-child {
+   border-bottom-left-radius: inherit;
+   border-top-right-radius: 0;
+}
+
+.c-list-group--horizontal > .c-list-group__item:last-child {
+   border-top-right-radius: inherit;
+   border-bottom-left-radius: 0;
+}
+
+.c-list-group--horizontal > .c-list-group__item + .c-list-group__item {
+   border-top-width: 1px;
+   border-left-width: 0;
+}
+
+
+
+
+
+@media (min-width: 30em) {
+
+   .c-list-group--horizontal\@ty {
+      flex-direction: row;
+
+      > * { flex: 1;}
+   }
+   
+   .c-list-group--horizontal\@ty > .c-list-group__item:first-child {
+      border-bottom-left-radius: inherit;
+      border-top-right-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@ty > .c-list-group__item:last-child {
+      border-top-right-radius: inherit;
+      border-bottom-left-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@ty > .c-list-group__item + .c-list-group__item {
+      border-top-width: 1px;
+      border-left-width: 0;
+   }
+
+}
+
+
+
+
+
+@media (min-width: 45em) {
+
+   .c-list-group--horizontal\@sm {
+      flex-direction: row;
+
+      > * { flex: 1;}
+   }
+   
+   .c-list-group--horizontal\@sm > .c-list-group__item:first-child {
+      border-bottom-left-radius: inherit;
+      border-top-right-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@sm > .c-list-group__item:last-child {
+      border-top-right-radius: inherit;
+      border-bottom-left-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@sm > .c-list-group__item + .c-list-group__item {
+      border-top-width: 1px;
+      border-left-width: 0;
+   }
+
+}
+
+
+
+
+
+@media (min-width: 64em) {
+
+   .c-list-group--horizontal\@md {
+      flex-direction: row;
+
+      > * { flex: 1;}
+   }
+   
+   .c-list-group--horizontal\@md > .c-list-group__item:first-child {
+      border-bottom-left-radius: inherit;
+      border-top-right-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@md > .c-list-group__item:last-child {
+      border-top-right-radius: inherit;
+      border-bottom-left-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@md > .c-list-group__item + .c-list-group__item {
+      border-top-width: 1px;
+      border-left-width: 0;
+   }
+
+}
+
+
+
+
+
+@media (min-width: 75em) {
+
+   .c-list-group--horizontal\@lg {
+      flex-direction: row;
+
+      > * { flex: 1;}
+   }
+   
+   .c-list-group--horizontal\@lg > .c-list-group__item:first-child {
+      border-bottom-left-radius: inherit;
+      border-top-right-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@lg > .c-list-group__item:last-child {
+      border-top-right-radius: inherit;
+      border-bottom-left-radius: 0;
+   }
+   
+   .c-list-group--horizontal\@lg > .c-list-group__item + .c-list-group__item {
+      border-top-width: 1px;
+      border-left-width: 0;
+   }
+
+}
+
+
+
+
+
+
+
+/* UI variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+.c-list-group--flush {
+   border-radius: 0;
+}
+
+.c-list-group--flush > .c-list-group__item {
+   border-width: 0 0 1px 0;
+}
+
+.c-list-group--flush > .c-list-group__item:last-child{
+   border-bottom-width: 0px;
+}
+
