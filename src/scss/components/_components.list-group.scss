@@ -27,7 +27,7 @@
 .c-list-group__item {
    position: relative;
    display: block;
-   padding: $global-spacing-unit-tiny;
+   padding: $global-spacing-unit-xs;
    border: 1px solid rgba(0,0,0, .125);
 }
 
@@ -93,25 +93,25 @@
 
 
 
-@media (min-width: 30em) {
+@include mq(xs) {
 
-   .c-list-group--horizontal\@ty {
+   .c-list-group--horizontal\@xs {
       flex-direction: row;
 
       > * { flex: 1;}
    }
    
-   .c-list-group--horizontal\@ty > .c-list-group__item:first-child {
+   .c-list-group--horizontal\@xs > .c-list-group__item:first-child {
       border-bottom-left-radius: inherit;
       border-top-right-radius: 0;
    }
    
-   .c-list-group--horizontal\@ty > .c-list-group__item:last-child {
+   .c-list-group--horizontal\@xs > .c-list-group__item:last-child {
       border-top-right-radius: inherit;
       border-bottom-left-radius: 0;
    }
    
-   .c-list-group--horizontal\@ty > .c-list-group__item + .c-list-group__item {
+   .c-list-group--horizontal\@xs > .c-list-group__item + .c-list-group__item {
       border-top-width: 1px;
       border-left-width: 0;
    }
@@ -122,7 +122,7 @@
 
 
 
-@media (min-width: 45em) {
+@include mq(sm) {
 
    .c-list-group--horizontal\@sm {
       flex-direction: row;
@@ -151,7 +151,7 @@
 
 
 
-@media (min-width: 64em) {
+@include mq(md) {
 
    .c-list-group--horizontal\@md {
       flex-direction: row;
@@ -180,7 +180,7 @@
 
 
 
-@media (min-width: 75em) {
+@include mq(lg) {
 
    .c-list-group--horizontal\@lg {
       flex-direction: row;

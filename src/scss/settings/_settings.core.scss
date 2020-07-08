@@ -40,19 +40,19 @@
 
 /**
 *
-* tiny..........30em - 480px
-* small.........45em - 720px
-* medium........64em - 1024px
-* large.........75em - 1200px
+* xs..........30em - 480px
+* sm..........45em - 720px
+* md..........64em - 1024px
+* lg..........75em - 1200px
 *
 */
 
 
 $global-font-size          :    100%   !default;
-$global-font-size-tiny     :    100%   !default;
-$global-font-size-small    :    100%   !default;
-$global-font-size-medium   :    105%   !default;
-$global-font-size-large    :    110%   !default;
+$global-font-size-xs       :    100%   !default;
+$global-font-size-sm       :    100%   !default;
+$global-font-size-md       :    105%   !default;
+$global-font-size-lg       :    110%   !default;
 
 $global-line-height        :    1.5    !default;
 
@@ -89,11 +89,11 @@ $global-line-height        :    1.5    !default;
 */
 
 
-$global-spacing-unit:       ($global-line-height * 1rem);
-$global-spacing-unit-tiny:  ($global-spacing-unit / 4);
-$global-spacing-unit-small: ($global-spacing-unit / 2);
-$global-spacing-unit-large: ($global-spacing-unit * 2);
-$global-spacing-unit-huge:  ($global-spacing-unit * 4);
+$global-spacing-unit:      ($global-line-height * 1rem);
+$global-spacing-unit-xs:   ($global-spacing-unit / 4);
+$global-spacing-unit-sm:   ($global-spacing-unit / 2);
+$global-spacing-unit-lg:   ($global-spacing-unit * 2);
+$global-spacing-unit-xl:   ($global-spacing-unit * 4);
 
 
 

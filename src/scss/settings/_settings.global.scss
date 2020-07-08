@@ -37,8 +37,8 @@
 
 
 
-$global-radius: 3px !default;
-$global-transition: all 300ms ease-in-out !default;
+$global-radius:      3px !default;
+$global-transition:  all 300ms ease-in-out !default;
 
 
 
@@ -49,8 +49,8 @@ $global-transition: all 300ms ease-in-out !default;
 
 
 
-$global-box-shadow-tiny: 0 2px 2px 0 rgba(0,0,0,0.14);
-$global-box-shadow-small: 0 4px 5px 0 rgba(0,0,0,0.14);
-$global-box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14);
-$global-box-shadow-large: 0 16px 24px 2px rgba(0,0,0,0.14);
-$global-box-shadow-huge: 0 24px 38px 3px rgba(0,0,0,0.14);
+$global-box-shadow-xs:   0 2px 2px 0 rgba(0,0,0,0.14);
+$global-box-shadow-sm:   0 4px 5px 0 rgba(0,0,0,0.14);
+$global-box-shadow:      0 8px 17px 2px rgba(0,0,0,0.14);
+$global-box-shadow-lg:   0 16px 24px 2px rgba(0,0,0,0.14);
+$global-box-shadow-xl:   0 24px 38px 3px rgba(0,0,0,0.14);

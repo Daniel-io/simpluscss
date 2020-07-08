@@ -32,7 +32,7 @@
   display: inline-block;      /* 1 */
   vertical-align: middle;     /* 2 */
   margin: 0;                  /* 4 */
-  padding: $global-spacing-unit-small $global-spacing-unit;
+  padding: $global-spacing-unit-sm $global-spacing-unit;
 
   /* Typography */
   font: inherit;              /* 3 */
@@ -338,12 +338,12 @@
 
 
 
-.c-btn--small {
-  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+.c-btn--sm {
+  padding: $global-spacing-unit-xs $global-spacing-unit-sm;
 }
 
-.c-btn--large {
-  padding: $global-spacing-unit-small $global-spacing-unit-large;
+.c-btn--lg {
+  padding: $global-spacing-unit-sm $global-spacing-unit-lg;
 }
 
 

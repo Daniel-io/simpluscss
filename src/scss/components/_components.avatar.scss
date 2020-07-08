@@ -31,12 +31,12 @@ $avatar-size-small  : $avatar-size / 2;
   border-radius: 100%;
 }
 
-.c-avatar--small {
+.c-avatar--sm {
   width:  $avatar-size-small;
   height: $avatar-size-small;
 }
 
-.c-avatar--large {
+.c-avatar--lg {
   width:  $avatar-size-large;
   height: $avatar-size-large;
 }

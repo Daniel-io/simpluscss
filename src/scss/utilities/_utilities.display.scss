@@ -35,24 +35,24 @@
 
 
 
-@include mq(tiny) {
+@include mq(xs) {
 
 
 
 
-  .u-display-block\@ty {
+  .u-display-block\@xs {
     display: block !important;
   }
   
-  .u-display-inline\@ty {
+  .u-display-inline\@xs {
     display: inline !important;
   }
   
-  .u-display-inline-block\@ty {
+  .u-display-inline-block\@xs {
     display: inline-block !important;
   }
   
-  .u-display-none\@ty {
+  .u-display-none\@xs {
     display: none !important;
   }
 
@@ -67,7 +67,7 @@
 
 
 
-@include mq(small) {
+@include mq(sm) {
 
 
 
@@ -104,7 +104,7 @@
 
 
 
-@include mq(medium) {
+@include mq(md) {
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-@include mq(large) {
+@include mq(lg) {
 
 
 

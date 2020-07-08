@@ -26,8 +26,8 @@
   @include clearfix;
 
 
-  @include mq(large) {
-    padding: $global-spacing-unit-large;
+  @include mq(lg) {
+    padding: $global-spacing-unit-lg;
   }
 }
 
@@ -56,24 +56,24 @@
 
 
 
-.o-box--flush {
+.o-box--fl {
   padding: 0;
 }
 
-.o-box--tiny {
-  padding: $global-spacing-unit-tiny;
+.o-box--xm {
+  padding: $global-spacing-unit-xs;
 }
 
-.o-box--small {
-  padding: $global-spacing-unit-small;
+.o-box--sm {
+  padding: $global-spacing-unit-sm;
 }
 
-.o-box--large {
-  padding: $global-spacing-unit-large;
+.o-box--lg {
+  padding: $global-spacing-unit-lg;
 }
 
-.o-box--huge {
-  padding: $global-spacing-unit-huge;
+.o-box--xl {
+  padding: $global-spacing-unit-xl;
 }
 
 

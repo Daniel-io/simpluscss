@@ -18,9 +18,9 @@
   @include clearfix;
 
 
-  @include mq(large) {
-    padding-top: $global-spacing-unit-large;
-    padding-bottom: $global-spacing-unit-large;
+  @include mq(lg) {
+    padding-top: $global-spacing-unit-lg;
+    padding-bottom: $global-spacing-unit-lg;
   }
 }
 
@@ -45,29 +45,29 @@
 
 
 
-.o-band--flush {
+.o-band--fl {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.o-band--tiny {
-  padding-top: $global-spacing-unit-tiny;
-  padding-bottom: $global-spacing-unit-tiny;
+.o-band--xs {
+  padding-top: $global-spacing-unit-xs;
+  padding-bottom: $global-spacing-unit-xs;
 }
   
-.o-band--small {
-  padding-top: $global-spacing-unit-small;
-  padding-bottom: $global-spacing-unit-small;
+.o-band--sm {
+  padding-top: $global-spacing-unit-sm;
+  padding-bottom: $global-spacing-unit-sm;
 }
   
-.o-band--large {
-  padding-top: $global-spacing-unit-large;
-  padding-bottom: $global-spacing-unit-large;
+.o-band--lg {
+  padding-top: $global-spacing-unit-lg;
+  padding-bottom: $global-spacing-unit-lg;
 }
 
-.o-band--huge {
-  padding-top: $global-spacing-unit-huge;
-  padding-bottom: $global-spacing-unit-huge;
+.o-band--xl {
+  padding-top: $global-spacing-unit-xl;
+  padding-bottom: $global-spacing-unit-xl;
 }
 
 

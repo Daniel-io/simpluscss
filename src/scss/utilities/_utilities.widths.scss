@@ -366,7 +366,7 @@
 
 
 
-@include mq(tiny) {
+@include mq(xs) {
 
 
 
@@ -388,16 +388,16 @@
 
 
 
-  .u-1\/1\@ty {
+  .u-1\/1\@xs {
     width: 100% !important;
   }
 
-  .u-push-1\/1\@ty {
+  .u-push-1\/1\@xs {
     position: relative;
     left: 100% !important;
   }
 
-  .u-pull-1\/1\@ty {
+  .u-pull-1\/1\@xs {
     position: relative;
     right: 100% !important;
   }
@@ -423,31 +423,31 @@
 
 
 
-  .u-1\/2\@ty {
+  .u-1\/2\@xs {
     width: 50% !important;
   }
 
-  .u-push-1\/2\@ty {
+  .u-push-1\/2\@xs {
     position: relative;
     left: 50% !important;
   }
 
-  .u-pull-1\/2\@ty {
+  .u-pull-1\/2\@xs {
     position: relative;
     right: 50% !important;
   }
 
 
-  .u-2\/2\@ty {
+  .u-2\/2\@xs {
     width: 100% !important;
   }
 
-  .u-push-2\/2\@ty {
+  .u-push-2\/2\@xs {
     position: relative;
     left: 100% !important;
   }
 
-  .u-pull-2\/2\@ty {
+  .u-pull-2\/2\@xs {
     position: relative;
     right: 100% !important;
   }
@@ -473,46 +473,46 @@
 
 
 
-  .u-1\/3\@ty {
+  .u-1\/3\@xs {
     width: 33.333333333% !important;
   }
 
-  .u-push-1\/3\@ty {
+  .u-push-1\/3\@xs {
     position: relative;
     left: 33.333333333% !important;
   }
 
-  .u-pull-1\/3\@ty {
+  .u-pull-1\/3\@xs {
     position: relative;
     right: 33.333333333% !important;
   }
 
 
-  .u-2\/3\@ty {
+  .u-2\/3\@xs {
     width: 66.666666667% !important;
   }
 
-  .u-push-2\/3\@ty {
+  .u-push-2\/3\@xs {
     position: relative;
     left: 66.666666667% !important;
   }
 
-  .u-pull-2\/3\@ty {
+  .u-pull-2\/3\@xs {
     position: relative;
     right: 66.666666667% !important;
   }
 
 
-  .u-3\/3\@ty {
+  .u-3\/3\@xs {
     width: 100% !important;
   }
 
-  .u-push-3\/3\@ty {
+  .u-push-3\/3\@xs {
     position: relative;
     left: 100% !important;
   }
 
-  .u-pull-3\/3\@ty {
+  .u-pull-3\/3\@xs {
     position: relative;
     right: 100% !important;
   }
@@ -538,61 +538,61 @@
 
 
 
-  .u-1\/4\@ty {
+  .u-1\/4\@xs {
     width: 25% !important;
   }
 
-  .u-push-1\/4\@ty {
+  .u-push-1\/4\@xs {
     position: relative;
     left: 25% !important;
   }
 
-  .u-pull-1\/4\@ty {
+  .u-pull-1\/4\@xs {
     position: relative;
     right: 25% !important;
   }
 
 
-  .u-2\/4\@ty {
+  .u-2\/4\@xs {
     width: 50% !important;
   }
 
-  .u-push-2\/4\@ty {
+  .u-push-2\/4\@xs {
     position: relative;
     left: 50% !important;
   }
 
-  .u-pull-2\/4\@ty {
+  .u-pull-2\/4\@xs {
     position: relative;
     right: 50% !important;
   }
 
 
-  .u-3\/4\@ty {
+  .u-3\/4\@xs {
     width: 75% !important;
   }
 
-  .u-push-3\/4\@ty {
+  .u-push-3\/4\@xs {
     position: relative;
     left: 75% !important;
   }
 
-  .u-pull-3\/4\@ty {
+  .u-pull-3\/4\@xs {
     position: relative;
     right: 75% !important;
   }
 
 
-  .u-4\/4\@ty {
+  .u-4\/4\@xs {
     width: 100% !important;
   }
 
-  .u-push-4\/4\@ty {
+  .u-push-4\/4\@xs {
     position: relative;
     left: 100% !important;
   }
 
-  .u-pull-4\/4\@ty {
+  .u-pull-4\/4\@xs {
     position: relative;
     right: 100% !important;
   }
@@ -618,76 +618,76 @@
 
 
 
-  .u-1\/5\@ty {
+  .u-1\/5\@xs {
     width: 20% !important;
   }
 
-  .u-push-1\/5\@ty {
+  .u-push-1\/5\@xs {
     position: relative;
     left: 20% !important;
   }
 
-  .u-pull-1\/5\@ty {
+  .u-pull-1\/5\@xs {
     position: relative;
     right: 20% !important;
   }
 
 
-  .u-2\/5\@ty {
+  .u-2\/5\@xs {
     width: 40% !important;
   }
 
-  .u-push-2\/5\@ty {
+  .u-push-2\/5\@xs {
     position: relative;
     left: 40% !important;
   }
 
-  .u-pull-2\/5\@ty {
+  .u-pull-2\/5\@xs {
     position: relative;
     right: 40% !important;
   }
 
 
-  .u-3\/5\@ty {
+  .u-3\/5\@xs {
     width: 60% !important;
   }
 
-  .u-push-3\/5\@ty {
+  .u-push-3\/5\@xs {
     position: relative;
     left: 60% !important;
   }
 
-  .u-pull-3\/5\@ty {
+  .u-pull-3\/5\@xs {
     position: relative;
     right: 60% !important;
   }
 
 
-  .u-4\/5\@ty {
+  .u-4\/5\@xs {
     width: 80% !important;
   }
 
-  .u-push-4\/5\@ty {
+  .u-push-4\/5\@xs {
     position: relative;
     left: 80% !important;
   }
 
-  .u-pull-4\/5\@ty {
+  .u-pull-4\/5\@xs {
     position: relative;
     right: 80% !important;
   }
 
 
-  .u-5\/5\@ty {
+  .u-5\/5\@xs {
     width: 100% !important;
   }
 
-  .u-push-5\/5\@ty {
+  .u-push-5\/5\@xs {
     position: relative;
     left: 100% !important;
   }
 
-  .u-pull-5\/5\@ty {
+  .u-pull-5\/5\@xs {
     position: relative;
     right: 100% !important;
   }
@@ -713,11 +713,11 @@
 
 
 
-  .u-push-none\@ty {
+  .u-push-none\@xs {
     left: 0 !important;
   }
 
-  .u-pull-none\@ty {
+  .u-pull-none\@xs {
     right: 0 !important;
   }
 
@@ -741,7 +741,7 @@
 
 
 
-@include mq(small) {
+@include mq(sm) {
 
 
 
@@ -1116,7 +1116,7 @@
 
 
 
-@include mq(medium) {
+@include mq(md) {
   
 
 
@@ -1492,7 +1492,7 @@
 
 
 
-@include mq(large) {
+@include mq(lg) {
  
 
 
