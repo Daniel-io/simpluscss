@@ -11,6 +11,23 @@
 
 
 
+$breakpoints: (
+  xs:   \@xs,
+  sm:   \@sm,
+  md:   \@md,
+  lg:   \@lg
+);
+  
+  
+
+
+
+
+
+
+
+
+
 /**
 * Pre-configuration for Sass MQ.
 * $breakpoint argument options 

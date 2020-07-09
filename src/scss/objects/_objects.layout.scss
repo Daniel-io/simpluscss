@@ -89,12 +89,12 @@
 
 
  .o-layout {
-  display: block;                           /* 1 */
-  margin:  0;                               /* 2 */
-  padding: 0;                               /* 2 */
-  list-style: none;                         /* 1 */
-  margin-left: -$global-spacing-unit;       /* 3 */
-  font-size: 0;
+  display: flex;                        /* 1 */
+  flex-wrap: wrap;
+  padding: 0;                           /* 2 */
+  margin: 0;                            /* 2 */
+  list-style-type: none;                /* 1 */
+  margin-left: -$global-spacing-unit;
 }
 
 
@@ -114,12 +114,10 @@
 
 
 .o-layout__item {
+  flex: 1 1 100%;
+  max-width: 100%;
   box-sizing: border-box;                     /* 1 */
-  display: inline-block;                      /* 2 */
-  vertical-align: top;                        /* 3 */
-  width: 100%;                                /* 4 */
   padding-left: $global-spacing-unit;         /* 5 */
-  font-size: 1rem;
 }
 
 
@@ -143,11 +141,11 @@
 
 
 
-.o-layout--flush {
+.o-layout--fl {
   margin-left: 0;
 }
 
-.o-layout--flush > .o-layout__item {
+.o-layout--fl > .o-layout__item {
   padding-left: 0;
 }
 
@@ -208,7 +206,8 @@
 
 
 
-/* Vertical alignment modifiers
+
+/* Auto width items
    ========================================================================== */
 
 
@@ -221,26 +220,26 @@
 
 
 /**
-* Align all grid items to the middles of each other.
+* Each item grows to fill available space base on distribution amoung the number of items
+* Items are stil capable of wrapping
 */
 
 
-.o-layout--middle > .o-layout__item {
-  vertical-align: middle;
+.o-layout--auto > .o-layout__item {
+  flex: 1 1 0;
 }
 
 
 
 
 
-/**
-* Align all grid items to the bottoms of each other.
-*/
 
 
-.o-layout--bottom > .o-layout__item {
-  vertical-align: bottom;
-}
+
+
+
+/* Equal height columns
+   ========================================================================== */
 
 
 
@@ -258,10 +257,8 @@
 */
 
 
-.o-layout--stretch {
-  display: flex;
-  flex-wrap: wrap;
-}
+
+
 
 .o-layout--stretch > .o-layout__item{
   display: flex;
@@ -272,17 +269,8 @@
 
 
 
-.o-layout--stretch.o-layout--center {
-  justify-content: center;
-}
 
-.o-layout--stretch.o-layout--left {
-  justify-content: flex-start;
-}
 
-.o-layout--stretch.o-layout--right {
-  justify-content: flex-end;
-}
 
 
 
@@ -291,122 +279,3 @@
 
 
 
-
-
-/* Fill order modifiers
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-/**
-* Fill up the layout system from the center.
-*/   
-
-
-.o-layout--center {
-  text-align: center;
-}
-
-.o-layout--center > .o-layout__item {
-  text-align: left;
-}
-
-
-
-
-
-/**
-* Fill up the layout system from the right-hand side.
-*/ 
-
-
-.o-layout--right {
-  text-align: right;
-}
-
-.o-layout--right > .o-layout__item {
-  text-align: left;
-}
-
-
-
-
-
-/**
-* Fill up the layout system from the left-hand side. This will likely only be
-* needed when using in conjunction with `.o-layout--reverse`.
-*/
-
-
-.o-layout--left {
-  text-align: left;
-}
-
-.o-layout--left > .o-layout__item {
-  text-align: left;
-}
-
-
-
-
-
-/**
-* Reverse the rendered order of the grid system.
-*/
-
-
-.o-layout--reverse {
-  direction: rtl;
-}
-
-.o-layout--reverse > .o-layout__item {
-  direction: ltr;
-}
-
-
-
-
-
-
-
-
-
-
-/* layout-item width modifier
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-/**
-* Cause layout items to take up a non-explicit amount of width.
-*/
-
-
-.o-layout--auto > .o-layout__item {
-  width: auto;
-}
-
-
-/**
-* Cause layout items to take 100% of the available width
-*/
-
-
-.o-layout--full > .o-layout__item {
-  flex: 1;
-  width: 100%;
-}

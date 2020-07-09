@@ -64,6 +64,7 @@
 * Background...........Background color.
 * Clearfix.............Clearfix floats.
 * Display..............Block - inline - inline-block - none.
+* Flex.................Flex properties
 * Hacks................Short-term hacks and quick-fixes.
 * Headings.............Reassigning our heading styles to helper classes.
 * Healthcheck..........Visual health-check tool.
@@ -136,6 +137,7 @@
 @import "utilities/utilities.background";
 @import "utilities/utilities.clearfix";
 @import "utilities/utilities.display";
+@import "utilities/utilities.flex";
 @import "utilities/utilities.hacks";
 @import "utilities/utilities.headings";
 @import "utilities/utilities.healthcheck";
