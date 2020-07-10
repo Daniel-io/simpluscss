@@ -40,17 +40,16 @@ Example Snippet
 
 
 
-
 /**
 * 1. Set stack order for modal, backdrop and modal dialog.
 * 2. Set margin. (will be base for proper max height).
 */
 
-$zindex-dialog   :    1060;                    /* 1 */
-$zindex-backdrop :    1050;                    /* 1 */
-$zindex-modal    :    1040;                    /* 1 */
+$zindex-modal    :    1040;                     /* 1 */
+$zindex-backdrop :    1050;                     /* 1 */
+$zindex-dialog   :    1060;                     /* 1 */
 
-$modal-dialog-margin: $global-spacing-unit;    /* 2 */
+$modal-dialog-margin:  $global-spacing-unit;    /* 2 */
 $modal-dialog-padding: $global-spacing-unit; 
 
 
@@ -61,14 +60,17 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 /**
-* Prevent body from scrolling when modal is open
+* Class added by JavaScript
+* Prevent body from scrolling when modal is open.
+* 
+* 1. Additional code for safari.
 */
 
 
 .js-modal-open {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
+  position: fixed;          /* 1 */
+  height: 100vh;            /* 1 */
+  width: 100vw;             /* 1 */
   overflow-y: hidden;
 
   .c-modal {
@@ -89,9 +91,8 @@ $modal-dialog-padding: $global-spacing-unit;
 /**
 * c-modal:          Overall container, were the modal scrolls within.
 * c-modal__dialog:  Shell div to position the modal with bottom padding.
-* c-modal__content: Actual modal.
+* c-modal__content: Actual modal containing the head, body, footer.
 */
-
 
 
 
@@ -156,6 +157,26 @@ $modal-dialog-padding: $global-spacing-unit;
   width: 100%;
   background-color: $white;
 }
+
+
+
+
+
+
+
+
+
+
+/* Modal sections
+   ========================================================================== */
+
+
+
+
+
+
+
+
 
 
 /**
@@ -313,7 +334,7 @@ $modal-padding: $global-spacing-unit-sm; //For modal header/body/footer
 .c-modal__dialog--centered {
   display: flex;                                                 /* 1 */
   align-items: center;                                           /* 1 */
-  max-height: calc(100vh - #{$modal-dialog-margin} * 2);;
+  max-height: calc(100vh - #{$modal-dialog-margin} * 2);
 
   &::before {
     display: block; // IE10

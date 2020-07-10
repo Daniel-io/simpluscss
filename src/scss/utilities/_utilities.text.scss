@@ -47,6 +47,38 @@
 
 
 
+@each $breakpoint, $postfix in $breakpoints {
+  @include mq($breakpoint) {
+
+    .u-text-center#{$postfix} {
+      text-align: center !important;
+    }
+    
+    .u-text-left#{$postfix} {
+      text-align: left !important;
+    }
+    
+    .u-text-right#{$postfix} {
+      text-align: right !important;
+    }
+    
+    .u-text-justify#{$postfix} {
+      text-align: justify !important;
+    }
+    
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Transformation
    ========================================================================== */

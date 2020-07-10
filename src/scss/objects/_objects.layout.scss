@@ -43,20 +43,7 @@
 * second and third items will be 50% of their parent, until they also become
 * 33.333% width at the medium breakpoint.
 *
-* We can also manipulate entire layout systems by adding a series of modifiers
-* to the `.o-layout` block. For example:
 *
-*   <div class="o-layout  o-layout--reverse">
-*
-* This will reverse the displayed order of the system so that it runs in the
-* opposite order to our source, effectively flipping the system over.
-*
-*   <div class="o-layout  o-layout--[right|center]">
-*
-* This will cause the system to fill up from either the centre or the right
-* hand side. Default behaviour is to fill up the layout system from the left.
-*
-* There are plenty more options available to us: explore them below.
 */
 
 
@@ -103,21 +90,17 @@
 
 /**
 * 1. Required in order to combine fluid widths with fixed gutters.
-* 2. Allows us to manipulate grids vertically, with text-level properties,
-*    etc.
-* 3. Default item alignment is with the tops of each other, like most
-*    traditional grid/layout systems.
-* 4. By default, all layout items are full-width (mobile first).
-* 5. Gutters provided by left padding:
+* 2. By default, all layout items are full-width (mobile first).
+* 3. Gutters provided by left padding:
 *    http://csswizardry.com/2011/08/building-better-grid-systems/
 */
 
 
 .o-layout__item {
-  flex: 1 1 100%;
-  max-width: 100%;
-  box-sizing: border-box;                     /* 1 */
-  padding-left: $global-spacing-unit;         /* 5 */
+  flex: 1 1 100%;                             /* 1 */
+  max-width: 100%;                            /* 1 */
+  box-sizing: border-box;                     /* 2 */
+  padding-left: $global-spacing-unit;         /* 3 */
 }
 
 

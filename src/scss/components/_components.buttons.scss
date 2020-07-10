@@ -29,19 +29,19 @@
   position: relative;
 
   /* Box model */
-  display: inline-block;      /* 1 */
-  vertical-align: middle;     /* 2 */
-  margin: 0;                  /* 4 */
+  display: inline-block;          /* 1 */
+  vertical-align: middle;         /* 2 */
+  margin: 0;                      /* 4 */
   padding: $global-spacing-unit-sm $global-spacing-unit;
 
   /* Typography */
-  font: inherit;              /* 3 */
-  text-align: center;         /* 4 */
-  text-decoration: none;      /* 4 */
+  font: inherit;                  /* 3 */
+  text-align: center;             /* 4 */
+  text-decoration: none;          /* 4 */
 
   /* Visual */
   background-color: transparent;
-  cursor: pointer;            /* 5 */
+  cursor: pointer;                /* 5 */
   border: unset;
   border-radius: $global-radius;
 
@@ -58,7 +58,7 @@
 
 
 
-/* Style variants
+/* UI variants
    ========================================================================== */
 
 
@@ -355,7 +355,7 @@
 
 
 
-/* UI variants
+/* Width variant
    ========================================================================== */
 
 
