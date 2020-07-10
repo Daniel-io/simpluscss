@@ -651,7 +651,8 @@
 
     .u-3\/5#{$postfix} {
       flex: 0 0 60% !important;
-      max-width: 60% !important;max-width: 60% !important;
+      max-width: 60% !important;
+      width: 60% !important;
     }
 
     .u-push-3\/5#{$postfix} {
