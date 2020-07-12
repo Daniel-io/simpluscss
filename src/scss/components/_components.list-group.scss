@@ -93,117 +93,57 @@
 
 
 
-@include mq(xs) {
 
-   .c-list-group--horizontal\@xs {
-      flex-direction: row;
 
-      > * { flex: 1;}
-   }
-   
-   .c-list-group--horizontal\@xs > .c-list-group__item:first-child {
-      border-bottom-left-radius: inherit;
-      border-top-right-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@xs > .c-list-group__item:last-child {
-      border-top-right-radius: inherit;
-      border-bottom-left-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@xs > .c-list-group__item + .c-list-group__item {
-      border-top-width: 1px;
-      border-left-width: 0;
-   }
 
+
+
+@each $breakpoint, $postfix in $breakpoints {
+  @include mq($breakpoint) {
+
+
+
+
+
+
+
+
+
+
+     .c-list-group--horizontal#{$postfix}  {
+        flex-direction: row;
+     
+        > * { flex: 1;}
+     }
+     
+     .c-list-group--horizontal#{$postfix}  > .c-list-group__item:first-child {
+        border-bottom-left-radius: inherit;
+        border-top-right-radius: 0;
+     }
+     
+     .c-list-group--horizontal#{$postfix}  > .c-list-group__item:last-child {
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0;
+     }
+     
+     .c-list-group--horizontal#{$postfix}  > .c-list-group__item + .c-list-group__item {
+        border-top-width: 1px;
+        border-left-width: 0;
+     }
+
+
+
+
+
+
+
+
+
+  }
 }
 
 
 
-
-
-@include mq(sm) {
-
-   .c-list-group--horizontal\@sm {
-      flex-direction: row;
-
-      > * { flex: 1;}
-   }
-   
-   .c-list-group--horizontal\@sm > .c-list-group__item:first-child {
-      border-bottom-left-radius: inherit;
-      border-top-right-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@sm > .c-list-group__item:last-child {
-      border-top-right-radius: inherit;
-      border-bottom-left-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@sm > .c-list-group__item + .c-list-group__item {
-      border-top-width: 1px;
-      border-left-width: 0;
-   }
-
-}
-
-
-
-
-
-@include mq(md) {
-
-   .c-list-group--horizontal\@md {
-      flex-direction: row;
-
-      > * { flex: 1;}
-   }
-   
-   .c-list-group--horizontal\@md > .c-list-group__item:first-child {
-      border-bottom-left-radius: inherit;
-      border-top-right-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@md > .c-list-group__item:last-child {
-      border-top-right-radius: inherit;
-      border-bottom-left-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@md > .c-list-group__item + .c-list-group__item {
-      border-top-width: 1px;
-      border-left-width: 0;
-   }
-
-}
-
-
-
-
-
-@include mq(lg) {
-
-   .c-list-group--horizontal\@lg {
-      flex-direction: row;
-
-      > * { flex: 1;}
-   }
-   
-   .c-list-group--horizontal\@lg > .c-list-group__item:first-child {
-      border-bottom-left-radius: inherit;
-      border-top-right-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@lg > .c-list-group__item:last-child {
-      border-top-right-radius: inherit;
-      border-bottom-left-radius: 0;
-   }
-   
-   .c-list-group--horizontal\@lg > .c-list-group__item + .c-list-group__item {
-      border-top-width: 1px;
-      border-left-width: 0;
-   }
-
-}
 
 
 

@@ -103,6 +103,9 @@
 }
 
 
+
+
+
 .u-2\/2 {
   flex: 0 0 100% !important;
   max-width: 100% !important;
@@ -153,6 +156,9 @@
 }
 
 
+
+
+
 .u-2\/3 {
   flex: 0 0 66.666666667% !important;
   max-width: 66.666666667% !important;
@@ -166,6 +172,9 @@
 .u-pull-2\/3 {
   margin-right: 66.666666667% !important;
 }
+
+
+
 
 
 .u-3\/3 {
@@ -218,6 +227,9 @@
 }
 
 
+
+
+
 .u-2\/4 {
   flex: 0 0 50% !important;
   max-width: 50% !important;
@@ -233,6 +245,9 @@
 }
 
 
+
+
+
 .u-3\/4 {
   flex: 0 0 75% !important;
   max-width: 75% !important;
@@ -246,6 +261,9 @@
 .u-pull-3\/4 {
   margin-right: 75% !important;
 }
+
+
+
 
 
 .u-4\/4 {
@@ -298,6 +316,9 @@
 }
 
 
+
+
+
 .u-2\/5 {
   flex: 0 0 40% !important;
   max-width: 40% !important;
@@ -311,6 +332,9 @@
 .u-pull-2\/5 {
   margin-right: 40% !important;
 }
+
+
+
 
 
 .u-3\/5 {
@@ -328,6 +352,9 @@
 }
 
 
+
+
+
 .u-4\/5 {
   flex: 0 0 80% !important;
   max-width: 80% !important;
@@ -343,6 +370,9 @@
 }
 
 
+
+
+
 .u-5\/5 {
   flex: 0 0 100% !important;
   max-width: 100% !important;
@@ -354,6 +384,131 @@
 }
 
 .u-pull-5\/5 {
+  margin-right: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Sixths
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.u-1\/6 {
+  flex: 0 0 16.6666667% !important;
+  max-width: 16.6666667%  !important;
+  width: 16.6666667%  !important;
+}
+
+.u-push-1\/6 {
+  margin-left: 16.6666667% !important;
+}
+
+.u-pull-1\/6 {
+  margin-right: 16.6666667% !important;
+}
+
+
+
+
+
+.u-2\/6 {
+  flex: 0 0 33.3333333% !important;
+  max-width: 33.3333333%  !important;
+  width: 33.3333333%  !important;
+}
+
+.u-push-2\/6 {
+  margin-left: 33.3333333%  !important;
+}
+
+.u-pull-2\/6 {
+  margin-right: 33.3333333%  !important;
+}
+
+
+
+
+
+.u-3\/6 {
+  flex: 0 0 50% !important;
+  max-width: 50%  !important;
+  width: 50%  !important;
+}
+
+.u-push-3\/6 {
+  margin-left: 50% !important;
+}
+
+.u-pull-3\/6 {
+  margin-right: 50% !important;
+}
+
+
+
+
+
+.u-4\/6 {
+  flex: 0 0 66.6666667% !important;
+  max-width: 66.6666667%  !important;
+  width: 66.6666667%  !important;
+}
+
+.u-push-4\/6 {
+  margin-left: 66.6666667% !important;
+}
+
+.u-pull-4\/6 {
+  margin-right: 66.6666667% !important;
+}
+
+
+
+
+
+.u-5\/6 {
+  flex: 0 0 83.333333% !important;
+  max-width: 83.333333% !important;
+  width: 83.333333% !important;
+}
+
+.u-push-5\/6 {
+  margin-left: 83.333333% !important;
+}
+
+.u-pull-5\/6 {
+  margin-right: 83.333333% !important;
+}
+
+
+
+
+
+.u-6\/6 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.u-push-6\/6 {
+  margin-left: 100% !important;
+}
+
+.u-pull-6\/6 {
   margin-right: 100% !important;
 }
 
@@ -439,6 +594,9 @@
     }
 
 
+
+
+
     .u-2\/2#{$postfix} {
       flex: 0 0 100% !important;
       max-width: 100% !important;
@@ -489,6 +647,9 @@
     }
 
 
+
+
+
     .u-2\/3#{$postfix} {
       flex: 0 0 66.666666667% !important;
       max-width: 66.666666667% !important;
@@ -502,6 +663,9 @@
     .u-pull-2\/3#{$postfix} {
       margin-right: 66.666666667% !important;
     }
+
+
+
 
 
     .u-3\/3#{$postfix} {
@@ -554,6 +718,9 @@
     }
 
 
+
+
+
     .u-2\/4#{$postfix} {
       flex: 0 0 50% !important;
       max-width: 50% !important;
@@ -569,6 +736,9 @@
     }
 
 
+
+
+
     .u-3\/4#{$postfix} {
       flex: 0 0 75% !important;
       max-width: 75% !important;
@@ -582,6 +752,9 @@
     .u-pull-3\/4#{$postfix} {
       margin-right: 75% !important;
     }
+
+
+
 
 
     .u-4\/4#{$postfix} {
@@ -634,6 +807,9 @@
     }
 
 
+
+
+
     .u-2\/5#{$postfix} {
       flex: 0 0 40% !important;
       max-width: 40% !important;
@@ -647,6 +823,9 @@
     .u-pull-2\/5#{$postfix} {
       margin-right: 40% !important;
     }
+
+
+
 
 
     .u-3\/5#{$postfix} {
@@ -664,6 +843,9 @@
     }
 
 
+
+
+
     .u-4\/5#{$postfix} {
       flex: 0 0 80% !important;
       max-width: 80% !important;
@@ -677,6 +859,9 @@
     .u-pull-4\/5#{$postfix} {
       margin-right: 80% !important;
     }
+
+
+
 
 
     .u-5\/5#{$postfix} {
@@ -693,6 +878,130 @@
       margin-right: 100% !important;
     }
 
+
+
+
+
+
+
+
+
+
+    /* Sixths
+     ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+    .u-1\/6#{$postfix} {
+      flex: 0 0 16.6666667% !important;
+      max-width: 16.6666667%  !important;
+      width: 16.6666667%  !important;
+    }
+
+    .u-push-1\/6#{$postfix} {
+      margin-left: 16.6666667% !important;
+    }
+
+    .u-pull-1\/6#{$postfix} {
+      margin-right: 16.6666667% !important;
+    }
+
+
+
+
+
+    .u-2\/6#{$postfix} {
+      flex: 0 0 33.3333333% !important;
+      max-width: 33.3333333%  !important;
+      width: 33.3333333%  !important;
+    }
+
+    .u-push-2\/6#{$postfix} {
+      margin-left: 33.3333333%  !important;
+    }
+
+    .u-pull-2\/6#{$postfix} {
+      margin-right: 33.3333333%  !important;
+    }
+
+
+
+
+
+    .u-3\/6#{$postfix} {
+      flex: 0 0 50% !important;
+      max-width: 50%  !important;
+      width: 50%  !important;
+    }
+
+    .u-push-3\/6#{$postfix} {
+      margin-left: 50% !important;
+    }
+
+    .u-pull-3\/6#{$postfix} {
+      margin-right: 50% !important;
+    }
+
+
+
+
+
+    .u-4\/6#{$postfix} {
+      flex: 0 0 66.6666667% !important;
+      max-width: 66.6666667%  !important;
+      width: 66.6666667%  !important;
+    }
+
+    .u-push-4\/6#{$postfix} {
+      margin-left: 66.6666667% !important;
+    }
+
+    .u-pull-4\/6#{$postfix} {
+      margin-right: 66.6666667% !important;
+    }
+
+
+
+
+
+    .u-5\/6#{$postfix} {
+      flex: 0 0 83.333333% !important;
+      max-width: 83.333333% !important;
+      width: 83.333333% !important;
+    }
+
+    .u-push-5\/6#{$postfix} {
+      margin-left: 83.333333% !important;
+    }
+
+    .u-pull-5\/6#{$postfix} {
+      margin-right: 83.333333% !important;
+    }
+
+
+
+
+
+    .u-6\/6#{$postfix} {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    .u-push-6\/6#{$postfix} {
+      margin-left: 100% !important;
+    }
+
+    .u-pull-6\/6#{$postfix} {
+      margin-right: 100% !important;
+    }
 
 
 

@@ -35,24 +35,32 @@
 
 
 
-@include mq(xs) {
+
+@each $breakpoint, $postfix in $breakpoints {
+  @include mq($breakpoint) {
 
 
 
 
-  .u-display-block\@xs {
+
+
+
+
+
+
+  .u-display-block#{$postfix} {
     display: block !important;
   }
-  
-  .u-display-inline\@xs {
+
+  .u-display-inline#{$postfix} {
     display: inline !important;
   }
-  
-  .u-display-inline-block\@xs {
+
+  .u-display-inline-block#{$postfix} {
     display: inline-block !important;
   }
-  
-  .u-display-none\@xs {
+
+  .u-display-none#{$postfix} {
     display: none !important;
   }
 
@@ -61,110 +69,9 @@
 
 
 
-}
 
 
 
 
-
-@include mq(sm) {
-
-
-
-
-  .u-display-block\@sm {
-    display: block !important;
   }
-  
-  .u-display-inline\@sm {
-    display: inline !important;
-  }
-  
-  .u-display-inline-block\@sm {
-    display: inline-block !important;
-  }
-  
-  .u-display-none\@sm {
-    display: none !important;
-  }
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-@include mq(md) {
-
-
-
-
-  .u-display-block\@md {
-    display: block !important;
-  }
-  
-  .u-display-inline\@md {
-    display: inline !important;
-  }
-  
-  .u-display-inline-block\@md {
-    display: inline-block !important;
-  }
-  
-  .u-display-none\@md {
-    display: none !important;
-  }
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-@include mq(lg) {
-
-
-
-
-  .u-display-block\@lg {
-    display: block !important;
-  }
-  
-  .u-display-inline\@lg {
-    display: inline !important;
-  }
-  
-  .u-display-inline-block\@lg {
-    display: inline-block !important;
-  }
-  
-  .u-display-none\@lg {
-    display: none !important;
-  }
-
-
-
-
-
-
 }

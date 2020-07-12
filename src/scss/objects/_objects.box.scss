@@ -24,11 +24,6 @@
   display: block;                   /* 1 */
   padding: $global-spacing-unit;
   @include clearfix;
-
-
-  @include mq(lg) {
-    padding: $global-spacing-unit-lg;
-  }
 }
 
 .o-box > *:last-child {
@@ -60,7 +55,7 @@
   padding: 0;
 }
 
-.o-box--xm {
+.o-box--xs {
   padding: $global-spacing-unit-xs;
 }
 
@@ -76,6 +71,89 @@
   padding: $global-spacing-unit-xl;
 }
 
+
+
+
+
+
+
+
+
+
+@each $breakpoint, $postfix in $breakpoints {
+  @include mq($breakpoint) {
+
+
+
+
+
+
+
+
+
+
+  .o-box#{$postfix}  {
+    display: block;                   /* 1 */
+    padding: $global-spacing-unit;
+    @include clearfix;
+  }
+
+  .o-box#{$postfix}  > *:last-child {
+    margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Size variants
+    ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+  .o-box--fl#{$postfix}  {
+    padding: 0;
+  }
+
+  .o-box--xs#{$postfix}  {
+    padding: $global-spacing-unit-xs;
+  }
+
+  .o-box--sm#{$postfix}  {
+    padding: $global-spacing-unit-sm;
+  }
+
+  .o-box--lg#{$postfix}  {
+    padding: $global-spacing-unit-lg;
+  }
+
+  .o-box--xl#{$postfix}  {
+    padding: $global-spacing-unit-xl;
+  }
+
+
+
+
+
+
+
+
+
+
+  }
+}
 
 
 
@@ -104,4 +182,9 @@
 .o-box--dark {
   color: $white;
 }
+
+
+
+
+
 

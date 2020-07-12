@@ -16,12 +16,6 @@
   padding-top: $global-spacing-unit;
   padding-bottom: $global-spacing-unit;
   @include clearfix;
-
-
-  @include mq(lg) {
-    padding-top: $global-spacing-unit-lg;
-    padding-bottom: $global-spacing-unit-lg;
-  }
 }
 
 
@@ -79,8 +73,94 @@
 
 
 
-/* Style variants
+@each $breakpoint, $postfix in $breakpoints {
+  @include mq($breakpoint) {
+
+
+
+
+
+
+
+
+
+
+  .o-band#{$postfix} {
+    display: block;   
+    padding-top: $global-spacing-unit;
+    padding-bottom: $global-spacing-unit;
+    @include clearfix;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* MQ - Size variants
+    ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+  .o-band--fl#{$postfix} {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .o-band--xs#{$postfix} {
+    padding-top: $global-spacing-unit-xs;
+    padding-bottom: $global-spacing-unit-xs;
+  }
+    
+  .o-band--sm#{$postfix} {
+    padding-top: $global-spacing-unit-sm;
+    padding-bottom: $global-spacing-unit-sm;
+  }
+    
+  .o-band--lg#{$postfix} {
+    padding-top: $global-spacing-unit-lg;
+    padding-bottom: $global-spacing-unit-lg;
+  }
+
+  .o-band--xl#{$postfix} {
+    padding-top: $global-spacing-unit-xl;
+    padding-bottom: $global-spacing-unit-xl;
+  }
+
+
+
+
+
+
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* UI variants
    ========================================================================== */
+
 
 
 
@@ -97,3 +177,24 @@
 .o-band--dark {
   color: $white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
