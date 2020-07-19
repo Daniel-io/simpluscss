@@ -269,8 +269,8 @@
   @include mq($breakpoint) {
 
 
-    .u-first                  { order: -1 }
-    .u-last                   { order:  1 } 
+    .u-first#{$postfix}       { order: -1 }
+    .u-last#{$postfix}        { order:  1 } 
 
 
     .u-order-0#{$postfix}     { order: 0; }
