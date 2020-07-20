@@ -59,6 +59,8 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 
+
+
 /**
 * Class added by JavaScript
 * Prevent body from scrolling when modal is open.
@@ -325,11 +327,15 @@ $modal-padding: $global-spacing-unit-sm; //For modal header/body/footer
 }
 
 
+
+
+
 /**
 * 1. Center modal__content.
 *
 * NOTE: This is used in tandem with .c-modal__dialog--scrollable 
 */
+
 
 .c-modal__dialog--centered {
   display: flex;                                                 /* 1 */

@@ -12,7 +12,7 @@
 
    
 /**
- *  1. Process & Concatenate stylesheets into one
+ *  1. Process & Concatenate stylesheets into the final stylesheet
  *  2. Require postcss to use autoprefixer
  *  3. Minify CSS
  *  4. Live Server
@@ -22,12 +22,12 @@
 
 const { src, dest, parallel, watch } = require('gulp');
 
-const sass = require('gulp-sass');                          /* 1 */
-const postcss = require('gulp-postcss');                    /* 2 */
-const autoprefixer = require('autoprefixer');               /* 2 */
-const cleanCSS = require('gulp-clean-css');                 /* 3 */
-const browserSync = require('browser-sync').create()        /* 4 */
-const concat = require('gulp-concat');
+const sass           = require('gulp-sass');                /* 1 */
+const postcss        = require('gulp-postcss');             /* 2 */
+const autoprefixer   = require('autoprefixer');             /* 2 */
+const cleanCSS       = require('gulp-clean-css');           /* 3 */
+const browserSync    = require('browser-sync').create()     /* 4 */
+const concat         = require('gulp-concat');
 
 sass.compiler = require('node-sass');
 
@@ -44,6 +44,10 @@ function server(cb) {
   })
   cb();
 }
+
+
+
+
 
 
 
@@ -73,6 +77,11 @@ function css() {
 
 
 
+
+
+
+
+
 /**
  *  1. Reference all js files
  *  2. Concat all js files
@@ -93,9 +102,19 @@ function js() {
 
 
 
+
+
+
+
+
 watch('src/scss/**/*.scss', css ).on('change', browserSync.reload);
 watch('docs/*.html').on('change', browserSync.reload)
 watch('src/js/**/*.js', js ).on('change', browserSync.reload);
+
+
+
+
+
 
 
 
