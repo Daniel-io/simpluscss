@@ -1,2 +1,2 @@
 # simpluscss
-Sass-based, OOCSS framework - based on inuitcss
+Sass-based, OOCSS framework - based on inuitcss & bootstrap
