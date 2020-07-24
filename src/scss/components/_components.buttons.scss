@@ -23,7 +23,7 @@ $button-padding-horizontal-lg:   $global-spacing-unit-lg;
 $button-transition:              $global-transition;
 $button-radius:                  $global-radius;
 
-$button-ghost-border-width:      rem(2px);
+$button-ghost-border-width:      rem(2px); //Must be in rem units for calc() function
 
 
 

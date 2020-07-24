@@ -11,6 +11,18 @@
 
 
 
+$list-group-item-padding:  $global-spacing-unit-xs;
+$list-group-radius:        $global-radius;
+
+
+
+
+
+
+
+
+
+
 .c-list-group {
    /* Box-model */
    display: flex;
@@ -18,16 +30,16 @@
    padding-left: 0;
    margin-left: 0;
    margin-bottom: 0;
-   border-radius: $global-radius;
-
+   
    /* Visual */
    list-style: none;
+   border-radius: $list-group-radius;
 }
 
 .c-list-group__item {
    position: relative;
    display: block;
-   padding: $global-spacing-unit-xs;
+   padding: $list-group-item-padding;
    border: 1px solid rgba(0,0,0, .125);
 }
 
@@ -139,6 +151,7 @@
 
 
 
+
   }
 }
 
@@ -162,6 +175,7 @@
 
 
 
+   
 /* Note: does no work with horizintal list */   
 
 .c-list-group--flush {

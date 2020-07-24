@@ -41,9 +41,12 @@ Example Snippet
 
 
 /**
+*
 * 1. Set stack order for modal, backdrop and modal dialog.
 * 2. Set margin. (will be base for proper max height).
+*
 */
+
 
 $zindex-modal    :    1040;                     /* 1 */
 $zindex-backdrop :    1050;                     /* 1 */
@@ -62,10 +65,12 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 /**
+*
 * Class added by JavaScript
 * Prevent body from scrolling when modal is open.
 * 
 * 1. Additional code for safari.
+*
 */
 
 
@@ -91,9 +96,11 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 /**
+*
 * c-modal:          Overall container, were the modal scrolls within.
 * c-modal__dialog:  Shell div to position the modal with bottom padding.
 * c-modal__content: Actual modal containing the head, body, footer.
+*
 */
 
 
@@ -106,10 +113,12 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 /**
+*
 * o-modal is direct parent of .o-modal__dialog
 *
 * 1. Prevent Chrome on Windows from adding a focus outline. For details, see
 * 2. Hidden by default
+*
 */
 
 
@@ -182,13 +191,18 @@ $modal-dialog-padding: $global-spacing-unit;
 
 
 /**
+*
 * Header contains  title and close button 
 * sibiling of c-modal__body & c-modal__footer if they exist
+*
 */
 
 
 $modal-title-line-height: 1.5;
 $modal-padding: $global-spacing-unit-sm; //For modal header/body/footer
+
+
+
 
 
 .c-modal__header {
@@ -213,9 +227,14 @@ $modal-padding: $global-spacing-unit-sm; //For modal header/body/footer
 }
 
 
+
+
+
 /**
+*
 * Where all content resides
 * sibiling of c-modal__header & c-modal__footer if they exist
+*
 */
 
 
@@ -233,6 +252,10 @@ $modal-padding: $global-spacing-unit-sm; //For modal header/body/footer
     line-height: .5;
   }
 }
+
+
+
+
 
 
 // Footer (for actions/buttons)
@@ -331,9 +354,11 @@ $modal-padding: $global-spacing-unit-sm; //For modal header/body/footer
 
 
 /**
+*
 * 1. Center modal__content.
 *
 * NOTE: This is used in tandem with .c-modal__dialog--scrollable 
+*
 */
 
 
