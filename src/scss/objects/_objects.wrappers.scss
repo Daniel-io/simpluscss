@@ -22,12 +22,7 @@
   padding-left: $global-spacing-unit;     
   margin-right: auto;
   margin-left: auto;
-}
-
-.o-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
+  @include clearfix;
 }
 
 

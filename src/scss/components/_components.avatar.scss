@@ -12,8 +12,8 @@
 
 
 $avatar-size        : $global-spacing-unit * 3;
-$avatar-size-large  : $avatar-size * 2;
-$avatar-size-small  : $avatar-size / 2;
+$avatar-size-lg     : $avatar-size * 2;
+$avatar-size-sm     : $avatar-size / 2;
 
 
 
@@ -32,13 +32,13 @@ $avatar-size-small  : $avatar-size / 2;
 }
 
 .c-avatar--sm {
-  width:  $avatar-size-small;
-  height: $avatar-size-small;
+  width:  $avatar-size-sm;
+  height: $avatar-size-sm;
 }
 
 .c-avatar--lg {
-  width:  $avatar-size-large;
-  height: $avatar-size-large;
+  width:  $avatar-size-lg;
+  height: $avatar-size-lg;
 }
 
 .c-avatar--block {
