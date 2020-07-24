@@ -11,6 +11,29 @@
 
 
 
+$button-padding-vertical:        $global-spacing-unit-sm;
+$button-padding-horizontal:      $global-spacing-unit;
+
+$button-padding-vertical-sm:     $global-spacing-unit-xs;
+$button-padding-horizontal-sm:   $global-spacing-unit-sm;
+
+$button-padding-vertical-lg:     $global-spacing-unit;
+$button-padding-horizontal-lg:   $global-spacing-unit-lg;
+
+$button-transition:              $global-transition;
+$button-radius:                  $global-radius;
+
+$button-ghost-border-width:      rem(2px);
+
+
+
+
+
+
+
+
+
+
 /**
 *
 * 1. Allow the use of style box model properties.
@@ -29,24 +52,24 @@
   position: relative;
 
   /* Box model */
-  display: inline-block;          /* 1 */
-  vertical-align: middle;         /* 2 */
-  margin: 0;                      /* 4 */
-  padding: $global-spacing-unit-sm $global-spacing-unit;
+  display: inline-block;                                            /* 1 */
+  vertical-align: middle;                                           /* 2 */
+  margin: 0;                                                        /* 4 */
+  padding: $button-padding-vertical $button-padding-horizontal;
 
   /* Typography */
-  font: inherit;                  /* 3 */
-  text-align: center;             /* 4 */
-  text-decoration: none;          /* 4 */
+  font: inherit;                                                    /* 3 */
+  text-align: center;                                               /* 4 */
+  text-decoration: none;                                            /* 4 */
 
   /* Visual */
   background-color: transparent;
-  cursor: pointer;                /* 5 */
+  cursor: pointer;                                                  /* 5 */
   border: unset;
-  border-radius: $global-radius;
+  border-radius: $button-radius;
 
   /* Misc */
-  transition: $global-transition;
+  transition: $button-transition;
 }
 
 
@@ -70,141 +93,180 @@
 
 
 
-.c-btn--primary,
-.c-btn--primary:link,
-.c-btn--primary:visited {
-  color: $white;
+.c-btn--primary {
   background-color: $color-primary;
-  border: 1px solid $color-primary;
-  border-radius: $global-radius;
+  
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; 
+    color: #fff;
+  }
+  
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-shadow;
+  }
 }
 
-.c-btn--primary:hover,
-.c-btn--primary:active,
-.c-btn--primary:focus {
-  background-color: $color-primary-shadow;
-  border: 1px solid $color-primary-shadow;
-}
 
 
 
 
-
-.c-btn--secondary,
-.c-btn--secondary:link,
-.c-btn--secondary:visited {
-  color: $white;
+.c-btn--secondary {
   background-color: $color-secondary;
-  border: 1px solid $color-secondary;
-  border-radius: $global-radius;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; 
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary-shadow;
+  }
 }
 
-.c-btn--secondary:hover,
-.c-btn--secondary:active,
-.c-btn--secondary:focus {
-  background-color: $color-secondary-shadow;
-  border: 1px solid $color-secondary-shadow;
-}
 
 
 
 
-
-.c-btn--tertiary,
-.c-btn--tertiary:link,
-.c-btn--tertiary:visited {
-  color: $white;
+.c-btn--tertiary {
   background-color: $color-tertiary;
-  border: 1px solid $color-tertiary;
-  border-radius: $global-radius;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; 
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-tertiary-shadow;
+  }
 }
 
-.c-btn--tertiary:hover,
-.c-btn--tertiary:active,
-.c-btn--tertiary:focus {
-  background-color: $color-tertiary-shadow;
-  border: 1px solid $color-tertiary-shadow;
-}
 
 
 
 
-
-.c-btn--success,
-.c-btn--success:link,
-.c-btn--success:visited {
-  color: $white;
+.c-btn--success {
   background-color: $color-success;
-  border: 1px solid $color-success;
-  border-radius: $global-radius;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; 
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-success-shadow;
+  }
 }
 
-.c-btn--success:hover,
-.c-btn--success:active,
-.c-btn--success:focus {
-  background-color: $color-success-shadow;
-  border: 1px solid $color-success-shadow;
-}
 
 
 
 
-
-.c-btn--error,
-.c-btn--error:link,
-.c-btn--error:visited {
-  color: $white;
+.c-btn--error {
   background-color: $color-error;
-  border: 1px solid $color-error;
-  border-radius: $global-radius;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; 
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-error-shadow;
+  }
 }
 
-.c-btn--error:hover,
-.c-btn--error:active,
-.c-btn--error:focus {
-  background-color: $color-error-shadow;
-  border: 1px solid $color-error-shadow;
-}
 
 
 
 
-
-.c-btn--link,
-.c-btn--link:link,
-.c-btn--link:visited {
-  color: $blue;
+.c-btn--link {
   background-color: unset;
-  border: unset;
-  text-decoration: underline;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+    border: unset;
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
-.c-btn--link:hover,
-.c-btn--link:active,
-.c-btn--link:focus {
-  text-decoration: underline;
-}
 
 
 
 
-
-.c-btn--flat,
-.c-btn--flat:link,
-.c-btn--flat:visited {
-  color: inherit;
+.c-btn--flat {
   background-color: unset;
-  border: unset;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: inherit;
+    border: unset;
+  }
+
+  &:hover,
+  &:focus {
+    color: currentColor;
+  }
 }
 
-.c-btn--flat:hover,
-.c-btn--flat:active,
-.c-btn--flat:focus {
-  color: inherit;
-  background-color: unset;
-  border: unset;
+
+
+
+
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.c-btn--sm {
+  padding: $button-padding-vertical-sm $button-padding-horizontal-sm;
 }
 
+.c-btn--lg {
+  padding: $button-padding-vertical-lg $button-padding-horizontal-lg;
+}
+  
 
 
 
@@ -230,120 +292,112 @@
 * Ghost buttons have see-through backgrounds and are bordered.
 */
 
+.c-btn--ghost {
+  border:  $button-ghost-border-width solid currentColor;
+  padding: calc(#{$button-padding-vertical} - #{$button-ghost-border-width})  calc(#{$button-padding-horizontal} - #{$button-ghost-border-width}); 
 
-.c-btn--ghost-primary, 
-.c-btn--ghost-primary:link, 
-.c-btn--ghost-primary:visited {
-  color: $color-primary;
-  border: 1px solid $color-primary;
-}
-
-.c-btn--ghost-primary:hover,
-.c-btn--ghost-primary:active,
-.c-btn--ghost-primary:focus {
-  background-color: $color-primary;
-  color: $white;
-}
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
 
 
 
 
+  &.c-btn--primary {
+    color: $color-primary;
 
-.c-btn--ghost-secondary, 
-.c-btn--ghost-secondary:link, 
-.c-btn--ghost-secondary:visited {
-  color: $color-secondary;
-  border: 1px solid $color-secondary;
-}
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-primary-shadow;
+      border: $button-ghost-border-width solid  $color-primary-shadow;
+    }
 
-.c-btn--ghost-secondary:hover,
-.c-btn--ghost-secondary:active,
-.c-btn--ghost-secondary:focus {
-  background-color: $color-secondary;
-  color: $white;
-}
+  }
 
 
 
 
 
-.c-btn--ghost-tertiary, 
-.c-btn--ghost-tertiary:link, 
-.c-btn--ghost-tertiary:visited {
-  color: $color-tertiary;
-  border: 1px solid $color-tertiary;
-}
+  &.c-btn--secondary {
+    color: $color-secondary;
 
-.c-btn--ghost-tertiary:hover,
-.c-btn--ghost-tertiary:active,
-.c-btn--ghost-tertiary:focus {
-  background-color: $color-tertiary;
-  color: $white;
-}
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-secondary-shadow;
+      border: $button-ghost-border-width solid  $color-secondary-shadow;
+    }
+
+  }
 
 
 
 
 
-.c-btn--ghost-success, 
-.c-btn--ghost-success:link, 
-.c-btn--ghost-success:visited {
-  color: $color-success;
-  border: 1px solid $color-success;
-}
+  &.c-btn--tertiary {
+    color: $color-tertiary;
 
-.c-btn--ghost-success:hover,
-.c-btn--ghost-success:active,
-.c-btn--ghost-success:focus {
-  background-color: $color-success;
-  color: $white;
-}
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-tertiary-shadow;
+      border: $button-ghost-border-width solid  $color-tertiary-shadow;
+    }
+
+  }
 
 
 
 
 
-.c-btn--ghost-error, 
-.c-btn--ghost-error:link, 
-.c-btn--ghost-error:visited {
-  color: $color-error;
-  border: 1px solid $color-error;
-}
+  &.c-btn--success {
+    color: $color-success;
 
-.c-btn--ghost-error:hover,
-.c-btn--ghost-error:active,
-.c-btn--ghost-error:focus {
-  background-color: $color-error;
-  color: $white;
-}
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-success-shadow;
+      border: $button-ghost-border-width solid  $color-success-shadow;
+    }
+
+  }
 
 
 
 
 
+  &.c-btn--error {
+    color: $color-error;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-error-shadow;
+      border: $button-ghost-border-width solid  $color-error-shadow;
+    }
+
+  }
 
 
 
 
 
-/* Size variants
-   ========================================================================== */
+  &.c-btn--sm {
+    padding: calc(#{$button-padding-vertical-sm} - #{$button-ghost-border-width}) calc(#{$button-padding-horizontal-sm} - #{$button-ghost-border-width});
+  }
+
+  &.c-btn--lg {
+    padding: calc(#{$button-padding-vertical-lg} - #{$button-ghost-border-width}) calc(#{$button-padding-horizontal-lg} - #{$button-ghost-border-width});
+  }
 
 
 
 
 
-
-
-
-
-
-.c-btn--sm {
-  padding: $global-spacing-unit-xs $global-spacing-unit-sm;
-}
-
-.c-btn--lg {
-  padding: $global-spacing-unit-sm $global-spacing-unit-lg;
 }
 
 
