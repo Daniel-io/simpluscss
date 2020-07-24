@@ -52,13 +52,13 @@
 * List-bare............Lists with no bullets or indents.
 * List-inline..........Simple abstraction for setting lists out in a line.
 * Media................Place any image- and text-like content side-by-side.
-* Modal................Modal structure.
 * Wrappers.............Wrappers and page constraints.
 *
 * COMPONENTS
 * Avatar...............Avatar image.
 * Buttons..............Button styles.
 * List-group...........List-group UI.
+* Modal................Modal structure.
 *
 *
 * UTILITIES
@@ -120,7 +120,6 @@
 @import "objects/objects.list-bare";
 @import "objects/objects.list-inline";
 @import "objects/objects.media";
-@import "objects/objects.modal";
 @import "objects/objects.wrappers";
 
 
@@ -130,6 +129,7 @@
 @import "components/components.avatar";
 @import "components/components.buttons";
 @import "components/components.list-group";
+@import "components/components.modal";
 
 
 
